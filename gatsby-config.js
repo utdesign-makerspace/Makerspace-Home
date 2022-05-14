@@ -4,6 +4,7 @@ module.exports = {
     siteUrl: `https://www.utd.ms`,
   },
   plugins: [
+    "gatsby-plugin-netlify",
     "gatsby-plugin-styled-components",
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
