@@ -9,7 +9,7 @@ import {
   SidebarSocials,
   Social,
 } from "./elements";
-import { FaBars, FaDiscord, FaInstagram } from "react-icons/fa";
+import { FaDiscord, FaInstagram } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
 const Sidebar = ({ isOpen, toggle }) => {
