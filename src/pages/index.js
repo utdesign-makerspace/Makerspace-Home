@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import Fonts from "../fonts/fonts";
 import Navbar from "../components/navbar/index";
-import "./style.css";
 import Sidebar from "../components/sidebar/index";
+import Hero from "../components/hero/index";
+import "./style.css";
 
 const IndexPage = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,7 +17,7 @@ const IndexPage = () => {
       <Fonts />
       <Navbar toggle={toggle} />
       <Sidebar isOpen={isOpen} toggle={toggle} />
-      <p>Hello world!</p>
+      <Hero />
     </>
   );
 };
