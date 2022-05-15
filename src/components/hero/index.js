@@ -1,6 +1,7 @@
 import React from "react";
 import { HeroContainer, HeroBg, HeroContent, HeroH1, HeroP } from "./elements";
 import ArcadeBg from "../../images/hero/arcade.png";
+import CosplayBg from "../../images/hero/cosplay.png";
 import PrintersBg from "../../images/hero/printers.png";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -12,6 +13,7 @@ import "swiper/css/navigation";
 
 const Backgrounds = [
   { subtitle: "3D printing fans", image: PrintersBg },
+  { subtitle: "cosplayers", image: CosplayBg },
   { subtitle: "game developers", image: ArcadeBg },
 ];
 
@@ -35,6 +37,7 @@ const Hero = () => {
       id="home"
       speed={1000}
       allowTouchMove={false}
+      initialSlide={Math.floor(Math.random() * Backgrounds.length)}
     >
       {Backgrounds.map((bg) => (
         <SwiperSlide>

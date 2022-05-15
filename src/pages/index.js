@@ -4,6 +4,7 @@ import Navbar from "../components/navbar/index";
 import Sidebar from "../components/sidebar/index";
 import Hero from "../components/hero/index";
 import "./style.css";
+import Info from "../components/info";
 
 const IndexPage = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,6 +19,7 @@ const IndexPage = () => {
       <Navbar toggle={toggle} />
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Hero />
+      <Info />
     </>
   );
 };
