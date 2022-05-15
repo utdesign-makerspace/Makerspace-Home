@@ -10,6 +10,7 @@ import {
   NavMenu,
   NavItem,
   NavLinks,
+  NavLogoImg,
 } from "./elements";
 import MakerspaceLogo from "../../images/navbarlogo.png";
 import { animateScroll as scroll } from "react-scroll";
@@ -23,7 +24,7 @@ const Navbar = ({ toggle }) => {
     <Nav>
       <NavbarContainer>
         <NavLogo to="/" onClick={goHome}>
-          <img src={MakerspaceLogo} height="40%" />
+          <NavLogoImg src={MakerspaceLogo} />
         </NavLogo>
         <MobileIcon onClick={toggle}>
           <FaBars />

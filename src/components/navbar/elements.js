@@ -39,6 +39,18 @@ export const NavLogo = styled(LinkS)`
   text-decoration: none;
 `;
 
+export const NavLogoImg = styled.img`
+  height: 40%;
+
+  @media screen and (max-width: 768px) {
+    height: 30%;
+  }
+
+  @media screen and (max-width: 350px) {
+    height: 20%;
+  }
+`;
+
 export const MobileIcon = styled.div`
   display: none;
 
