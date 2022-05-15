@@ -3,22 +3,58 @@ import { HeroContainer, HeroBg, HeroContent, HeroH1, HeroP } from "./elements";
 import ArcadeBg from "../../images/hero/arcade.png";
 import PrintersBg from "../../images/hero/printers.png";
 
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, EffectFade, Pagination, Navigation } from "swiper";
+import "swiper/css";
+import "swiper/css/effect-fade";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
+const Backgrounds = [
+  { subtitle: "3D printing fans", image: PrintersBg },
+  { subtitle: "game developers", image: ArcadeBg },
+];
+
 const Hero = () => {
   return (
-    <HeroContainer id="home">
-      <HeroBg src={PrintersBg} />
-      <HeroContent>
-        <HeroH1>
-          We are a community of
-          <br />
-          3D printing fans.
-        </HeroH1>
-        <HeroP>
-          UTDesign Makerspace is a free-to-use place of innovation,
-          collaboration, and education for all majors.
-        </HeroP>
-      </HeroContent>
-    </HeroContainer>
+    <Swiper
+      slidesPerView={1}
+      spaceBetween={30}
+      effect={"fade"}
+      autoplay={{
+        delay: 5000,
+        disableOnInteraction: true,
+      }}
+      loop={true}
+      pagination={{
+        clickable: true,
+      }}
+      navigation={true}
+      modules={[Autoplay, EffectFade, Pagination, Navigation]}
+      className="mySwiper"
+      id="home"
+      speed={1000}
+      allowTouchMove={false}
+    >
+      {Backgrounds.map((bg) => (
+        <SwiperSlide>
+          <HeroContainer>
+            <HeroBg src={bg.image} />
+            <HeroContent>
+              <HeroH1>
+                We are a community of
+                <br />
+                {bg.subtitle}.
+              </HeroH1>
+              <HeroP>
+                UTDesign Makerspace is a free-to-use place of innovation,
+                collaboration, and education for all majors.
+              </HeroP>
+            </HeroContent>
+          </HeroContainer>
+        </SwiperSlide>
+      ))}
+    </Swiper>
   );
 };
 

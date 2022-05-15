@@ -10,6 +10,8 @@ export const HeroContainer = styled.div`
   position: relative;
   z-index: 1;
   overflow-x: hidden;
+  user-select: none;
+  pointer-events: none;
 
   @media (max-width: 768px) {
     height: 400px;
