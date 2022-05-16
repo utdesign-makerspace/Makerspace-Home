@@ -65,11 +65,20 @@ export const HeroP = styled.p`
   text-align: left;
   max-width: 800px;
 
-  @media screen and (max-width: 768px) {
-    font-size: 24px;
-  }
-
   @media screen and (max-width: 480px) {
     font-size: 18px;
+  }
+`;
+
+export const HeroCopyright = styled.p`
+  color: #f2d1c9;
+  font-size: 16px;
+  text-align: right;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 12px;
   }
 `;

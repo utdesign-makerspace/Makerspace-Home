@@ -1,8 +1,17 @@
 import React from "react";
-import { HeroContainer, HeroBg, HeroContent, HeroH1, HeroP } from "./elements";
+import {
+  HeroContainer,
+  HeroBg,
+  HeroContent,
+  HeroH1,
+  HeroP,
+  HeroCopyright,
+} from "./elements";
 import ArcadeBg from "../../images/hero/arcade.png";
 import CosplayBg from "../../images/hero/cosplay.png";
 import PrintersBg from "../../images/hero/printers.png";
+import SGDA1Bg from "../../images/hero/sgda1.png";
+import SGDA2Bg from "../../images/hero/sgda2.png";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectFade, Pagination, Navigation } from "swiper";
@@ -13,8 +22,25 @@ import "swiper/css/navigation";
 
 const Backgrounds = [
   { subtitle: "3D printing fans", image: PrintersBg },
-  { subtitle: "cosplayers", image: CosplayBg },
+  {
+    subtitle: "cosplayers",
+    image: CosplayBg,
+    copyright: "Thomas Cortez (Biotom27)",
+    year: "2022",
+  },
   { subtitle: "game developers", image: ArcadeBg },
+  {
+    subtitle: "programmers",
+    image: SGDA2Bg,
+    copyright: "SGDA",
+    year: "2022",
+  },
+  {
+    subtitle: "workshop attendees",
+    image: SGDA1Bg,
+    copyright: "SGDA",
+    year: "2022",
+  },
 ];
 
 const Hero = () => {
@@ -54,6 +80,11 @@ const Hero = () => {
                 collaboration, and education for all majors.
               </HeroP>
             </HeroContent>
+            {bg.copyright && (
+              <HeroCopyright>
+                © {bg.copyright}, {bg.year ? bg.year : "2022"}
+              </HeroCopyright>
+            )}
           </HeroContainer>
         </SwiperSlide>
       ))}
