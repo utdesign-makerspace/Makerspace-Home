@@ -64,7 +64,7 @@ export const Title = styled.h1`
 `;
 
 export const Description = styled.p`
-  margin-bottom: 35px;
+  margin-bottom: 24px;
   font-size: 18px;
   line-height: 24px;
   color: #000;
@@ -99,4 +99,21 @@ export const Img = styled.img`
   width: 100%;
   margin: 0 0 0 0;
   padding-right: 0;
+`;
+
+export const BtnWrap = styled.div`
+  display: flex;
+  margin-left: auto;
+  justify-content: ${({ imgLeft }) => (imgLeft ? `left` : `right`)};
+
+  @media screen and (max-width: 768px) {
+    justify-content: left;
+  }
+
+  > * {
+    margin-right: 10px;
+  }
+  > *:last-child {
+    margin-right: 0px;
+  }
 `;

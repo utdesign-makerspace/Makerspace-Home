@@ -7,6 +7,7 @@ import {
   HeroP,
   HeroCopyright,
 } from "./elements";
+
 import ArcadeBg from "../../images/hero/arcade.png";
 import CosplayBg from "../../images/hero/cosplay.png";
 import PrintersBg from "../../images/hero/printers.png";
