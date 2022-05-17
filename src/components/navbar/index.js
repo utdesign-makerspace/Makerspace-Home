@@ -10,7 +10,6 @@ import {
   NavMenu,
   NavItem,
   NavLinkA,
-  NavLinkS,
   NavLinkG,
   NavLogoImg,
 } from "./elements";

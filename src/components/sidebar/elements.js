@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { FaTimes } from "react-icons/fa";
 import { Link as LinkS } from "react-scroll";
+import { Link } from "gatsby";
 
 export const SidebarContainer = styled.aside`
   position: fixed;
@@ -46,7 +47,43 @@ export const SidebarMenu = styled.ul`
   }
 `;
 
-export const SidebarLink = styled(LinkS)`
+export const SidebarLinkS = styled(LinkS)`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  text-decoration: none;
+  list-style: none;
+  transition: 0.2s ease-in-out;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+
+  &:hover {
+    color: #f2d1c9;
+    transition: 0.1s ease-in-out;
+  }
+`;
+
+export const SidebarLinkG = styled(Link)`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  text-decoration: none;
+  list-style: none;
+  transition: 0.2s ease-in-out;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+
+  &:hover {
+    color: #f2d1c9;
+    transition: 0.1s ease-in-out;
+  }
+`;
+
+export const SidebarLinkA = styled.a`
   display: flex;
   align-items: center;
   justify-content: center;

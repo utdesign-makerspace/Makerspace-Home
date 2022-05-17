@@ -4,7 +4,8 @@ import {
   Icon,
   CloseIcon,
   SidebarMenu,
-  SidebarLink,
+  SidebarLinkG,
+  SidebarLinkA,
   SidebarWrapper,
   SidebarSocials,
   Social,
@@ -20,39 +21,9 @@ const Sidebar = ({ isOpen, toggle }) => {
       </Icon>
       <SidebarWrapper>
         <SidebarMenu>
-          <SidebarLink
-            to="calendar"
-            smooth={true}
-            duration={500}
-            spy={true}
-            exact={true}
-            offset={-80}
-            onClick={toggle}
-          >
-            Calendar
-          </SidebarLink>
-          <SidebarLink
-            to="training"
-            smooth={true}
-            duration={500}
-            spy={true}
-            exact={true}
-            offset={-80}
-            onClick={toggle}
-          >
-            Training
-          </SidebarLink>
-          <SidebarLink
-            to="wiki"
-            smooth={true}
-            duration={500}
-            spy={true}
-            exact={true}
-            offset={-80}
-            onClick={toggle}
-          >
-            Wiki
-          </SidebarLink>
+          <SidebarLinkG to="/calendar">Calendar</SidebarLinkG>
+          <SidebarLinkA href="https://learn.utd.ms/">Training</SidebarLinkA>
+          <SidebarLinkA href="https://wiki.utd.ms/">Wiki</SidebarLinkA>
           <SidebarSocials>
             <Social href="https://discord.gg/VQzQMnnWnx" target="_blank">
               <FaDiscord />
