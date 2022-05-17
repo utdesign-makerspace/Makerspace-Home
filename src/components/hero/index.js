@@ -8,6 +8,7 @@ import {
   HeroCopyright,
 } from "./elements";
 
+import AIAABg from "../../images/hero/aiaa.png";
 import ArcadeBg from "../../images/hero/arcade.png";
 import CosplayBg from "../../images/hero/cosplay.png";
 import PrintersBg from "../../images/hero/printers.png";
@@ -29,17 +30,23 @@ const Backgrounds = [
     copyright: "Thomas Cortez (Biotom27)",
     year: "2022",
   },
+  {
+    subtitle: "engineers",
+    image: AIAABg,
+    copyright: "Erik Nguyen",
+    year: "2022",
+  },
   { subtitle: "game developers", image: ArcadeBg },
   {
     subtitle: "programmers",
     image: SGDA2Bg,
-    copyright: "SGDA",
+    copyright: "Student Game Developer Association",
     year: "2022",
   },
   {
     subtitle: "workshop attendees",
     image: SGDA1Bg,
-    copyright: "SGDA",
+    copyright: "Student Game Developer Association",
     year: "2022",
   },
 ];

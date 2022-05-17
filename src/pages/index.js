@@ -5,6 +5,7 @@ import Sidebar from "../components/sidebar/index";
 import Hero from "../components/hero/index";
 import "./style.css";
 import Info from "../components/info";
+import Sponsors from "../components/sponsors";
 
 const IndexPage = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,6 +21,7 @@ const IndexPage = () => {
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Hero />
       <Info />
+      <Sponsors />
     </>
   );
 };

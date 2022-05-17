@@ -4,11 +4,7 @@ import { motion } from "framer-motion";
 export const InfoContainer = styled.div`
   color: #fff;
   position: relative;
-  padding: 20px 0;
-
-  @media screen and (max-width: 768px) {
-    padding: 50px 0;
-  }
+  padding: 50px 0;
 
   /* :before {
     content: " ";
@@ -21,7 +17,7 @@ export const InfoContainer = styled.div`
 export const InfoWrapper = styled.div`
   display: grid;
   z-index: 1;
-  min-height: 400px;
+  min-height: 250px;
   width: 100%;
   max-width: 1200px;
   margin-left: auto;
