@@ -10,6 +10,10 @@ import {
   SponsorImg,
 } from "./elements";
 
+import AIAAImg from "../../images/sponsors/aiaa.png";
+import DBFImg from "../../images/sponsors/dbf.png";
+import OpenImg from "../../images/sponsors/openutd.png";
+import PRIDEImg from "../../images/sponsors/pride.png";
 import SGDAImg from "../../images/sponsors/sgda.png";
 import UTDesignImg from "../../images/sponsors/utdesign.svg";
 
@@ -21,6 +25,26 @@ const sponsors = [
   },
 ];
 const partners = [
+  {
+    name: "American Institute of Aeronautics and Astronautics",
+    img: AIAAImg,
+    link: "https://www.instagram.com/aiaa_utd/",
+  },
+  {
+    name: "Design Build Fly",
+    img: DBFImg,
+    link: "https://www.instagram.com/aiaa_utd/",
+  },
+  {
+    name: "OpenUTD",
+    img: OpenImg,
+    link: "https://openutd.club/",
+  },
+  {
+    name: "PRIDE @ UTD",
+    img: PRIDEImg,
+    link: "https://www.prideutdallas.net/",
+  },
   {
     name: "Student Game Developer Association",
     img: SGDAImg,
