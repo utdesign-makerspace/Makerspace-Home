@@ -9,7 +9,9 @@ import {
   MobileIcon,
   NavMenu,
   NavItem,
-  NavLinks,
+  NavLinkA,
+  NavLinkS,
+  NavLinkG,
   NavLogoImg,
 } from "./elements";
 import MakerspaceLogo from "../../images/navbarlogo.png";
@@ -31,40 +33,13 @@ const Navbar = ({ toggle }) => {
         </MobileIcon>
         <NavMenu>
           <NavItem>
-            <NavLinks
-              to="calendar"
-              smooth={true}
-              duration={500}
-              spy={true}
-              exact={true}
-              offset={-80}
-            >
-              Calendar
-            </NavLinks>
+            <NavLinkG to="/calendar">Calendar</NavLinkG>
           </NavItem>
           <NavItem>
-            <NavLinks
-              to="training"
-              smooth={true}
-              duration={500}
-              spy={true}
-              exact={true}
-              offset={-80}
-            >
-              Training
-            </NavLinks>
+            <NavLinkA href="https://learn.utd.ms/">Training</NavLinkA>
           </NavItem>
           <NavItem>
-            <NavLinks
-              to="wiki"
-              smooth={true}
-              duration={500}
-              spy={true}
-              exact={true}
-              offset={-80}
-            >
-              Wiki
-            </NavLinks>
+            <NavLinkA href="https://wiki.utd.ms/">Wiki</NavLinkA>
           </NavItem>
           <NavItem>
             <NavSocials href="https://discord.gg/VQzQMnnWnx" target="_blank">

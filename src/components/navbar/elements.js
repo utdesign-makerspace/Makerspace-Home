@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Link as LinkS } from "react-scroll";
+import { Link } from "gatsby";
 
 export const Nav = styled.nav`
   background: #c1393d;
@@ -27,7 +28,7 @@ export const NavbarContainer = styled.div`
   max-width: 1100px;
 `;
 
-export const NavLogo = styled(LinkS)`
+export const NavLogo = styled(Link)`
   color: #fff;
   justify-self: flex-start;
   cursor: pointer;
@@ -90,7 +91,35 @@ export const NavItem = styled.li`
   }
 `;
 
-export const NavLinks = styled(LinkS)`
+export const NavLinkS = styled(LinkS)`
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  height: 100%;
+  cursor: pointer;
+
+  &:hover {
+    color: #f2d1c9;
+    transition: 0.1s ease-in-out;
+  }
+`;
+
+export const NavLinkG = styled(Link)`
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  height: 100%;
+  cursor: pointer;
+
+  &:hover {
+    color: #f2d1c9;
+    transition: 0.1s ease-in-out;
+  }
+`;
+
+export const NavLinkA = styled.a`
   color: #fff;
   display: flex;
   align-items: center;

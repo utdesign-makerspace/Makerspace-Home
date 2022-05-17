@@ -2,12 +2,10 @@ import React, { useState } from "react";
 import Fonts from "../fonts/fonts";
 import Navbar from "../components/navbar/index";
 import Sidebar from "../components/sidebar/index";
-import Hero from "../components/hero/index";
-import Info from "../components/info";
-import Sponsors from "../components/sponsors";
+import GoogleCalendar from "../components/googlecalendar";
 import "./style.css";
 
-const IndexPage = () => {
+const CalendarPage = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => {
@@ -19,11 +17,9 @@ const IndexPage = () => {
       <Fonts />
       <Navbar toggle={toggle} />
       <Sidebar isOpen={isOpen} toggle={toggle} />
-      <Hero />
-      <Info />
-      <Sponsors />
+      <GoogleCalendar />
     </>
   );
 };
 
-export default IndexPage;
+export default CalendarPage;
