@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Fonts from "../fonts/fonts";
 import Navbar from "../components/navbar/index";
 import Sidebar from "../components/sidebar/index";
-import GoogleCalendar from "../components/googlecalendar";
+import Calendar from "../components/calendar";
 import "./style.css";
 
 const CalendarPage = () => {
@@ -17,7 +17,7 @@ const CalendarPage = () => {
       <Fonts />
       <Navbar toggle={toggle} />
       <Sidebar isOpen={isOpen} toggle={toggle} />
-      <GoogleCalendar />
+      <Calendar />
     </>
   );
 };

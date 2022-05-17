@@ -1,5 +1,4 @@
 import React from "react";
-import { CalContainer, CalWrapper } from "./elements";
 
 import FullCalendar from "@fullcalendar/react";
 import dayGridPlugin from "@fullcalendar/daygrid";
@@ -7,17 +6,7 @@ import listPlugin from "@fullcalendar/list";
 import googleCalendarPlugin from "@fullcalendar/google-calendar";
 import interactionPlugin from "@fullcalendar/interaction";
 
-const GoogleCalendar = () => {
-  return (
-    <CalContainer>
-      <CalWrapper>
-        <Cal />
-      </CalWrapper>
-    </CalContainer>
-  );
-};
-
-class Cal extends React.Component {
+class CalendarXML extends React.Component {
   render() {
     return (
       <FullCalendar
@@ -49,4 +38,4 @@ class Cal extends React.Component {
   }
 }
 
-export default GoogleCalendar;
+export default CalendarXML;
