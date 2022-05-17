@@ -95,7 +95,9 @@ const InfoSingle = ({
   buttonName,
   buttonIcon,
 }) => {
-  const { ref, inView } = useInView();
+  const { ref, inView } = useInView({
+    threshold: 0.25,
+  });
   const animation = useAnimation();
 
   useEffect(() => {
@@ -103,7 +105,7 @@ const InfoSingle = ({
       animation.start({
         y: 0,
         opacity: 1,
-        transition: { duration: 1.0 },
+        transition: { duration: 0.5 },
       });
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
