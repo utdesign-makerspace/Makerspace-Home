@@ -6,6 +6,7 @@ import Hero from "../components/hero/index";
 import Info from "../components/info";
 import Sponsors from "../components/sponsors";
 import "./style.css";
+import Footer from "../components/footer";
 
 const IndexPage = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,6 +23,7 @@ const IndexPage = () => {
       <Hero />
       <Info />
       <Sponsors />
+      <Footer />
     </>
   );
 };
