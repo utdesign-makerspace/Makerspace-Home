@@ -45,9 +45,7 @@ export const SponsorLinksContainer = styled.div`
 `;
 
 export const SponsorLink = styled.a`
-  height: 96px;
-  width: 128px;
-  margin: 8px 8px;
+  margin: 12px 12px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -55,6 +53,6 @@ export const SponsorLink = styled.a`
 
 export const SponsorImg = styled.img`
   height: 96px;
-  width: 128px;
+  width: 96px;
   object-fit: contain;
 `;

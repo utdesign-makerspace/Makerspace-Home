@@ -15,6 +15,7 @@ import {
 
 import AIAAImg from "../../images/sponsors/aiaa.png";
 import DBFImg from "../../images/sponsors/dbf.png";
+import IEEEImg from "../../images/sponsors/ieee.png";
 import OpenImg from "../../images/sponsors/openutd.png";
 import PRIDEImg from "../../images/sponsors/pride.png";
 import SGDAImg from "../../images/sponsors/sgda.png";
@@ -37,6 +38,11 @@ const partners = [
     name: "Design Build Fly",
     img: DBFImg,
     link: "https://www.instagram.com/aiaa_utd/",
+  },
+  {
+    name: "Institute of Electrical and Electronics Engineers",
+    img: IEEEImg,
+    link: "https://ieeeutd.org/",
   },
   {
     name: "OpenUTD",
