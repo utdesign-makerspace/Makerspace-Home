@@ -17,7 +17,7 @@ const IndexPage = () => {
   return (
     <>
       <Fonts />
-      <Navbar toggle={toggle} />
+      <Navbar toggle={toggle} transparent={true} />
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Hero />
       <Info />

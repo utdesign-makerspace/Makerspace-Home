@@ -3,13 +3,14 @@ import { Link as LinkS } from "react-scroll";
 import { Link } from "gatsby";
 
 export const Nav = styled.nav`
-  background: #c1393d;
+  background: ${({ transparent }) => (transparent ? `none` : `#c1393d`)};
+  position: ${({ transparent }) => (transparent ? `absolute` : `static`)};
   height: 80px;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1rem;
-  position: sticky;
   top: 0;
   z-index: 10;
 
