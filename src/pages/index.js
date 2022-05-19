@@ -5,8 +5,9 @@ import Sidebar from "../components/sidebar/index";
 import Hero from "../components/hero/index";
 import Info from "../components/info";
 import Sponsors from "../components/sponsors";
-import "./style.css";
 import Footer from "../components/footer";
+import HelmetComponent from "../components/helmet";
+import "./style.css";
 
 const IndexPage = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,6 +19,7 @@ const IndexPage = () => {
   return (
     <>
       <Fonts />
+      <HelmetComponent />
       <Navbar toggle={toggle} transparent={true} />
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Hero />

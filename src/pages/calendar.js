@@ -3,6 +3,7 @@ import Fonts from "../fonts/fonts";
 import Navbar from "../components/navbar/index";
 import Sidebar from "../components/sidebar/index";
 import Calendar from "../components/calendar";
+import HelmetComponent from "../components/helmet";
 import "./style.css";
 
 const CalendarPage = () => {
@@ -15,6 +16,7 @@ const CalendarPage = () => {
   return (
     <>
       <Fonts />
+      <HelmetComponent title="Calendar" />
       <Navbar toggle={toggle} />
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Calendar />
