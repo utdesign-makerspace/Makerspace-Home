@@ -22,7 +22,7 @@ const HelmetComponent = ({ title }) => {
 
       {/* Open Graph / Facebook */}
       <meta property="og:type" content="website" />
-      <meta property="og:title" content="UTDesign Makerspace" />
+      <meta property="og:title" content={newTitle} />
       <meta
         property="og:description"
         content="UTDesign Makerspace is a free-to-use place of innovation, collaboration, and education for all majors."
@@ -30,7 +30,7 @@ const HelmetComponent = ({ title }) => {
       <meta property="og:image" content={Icon} />
 
       {/* Twitter */}
-      <meta property="twitter:title" content="UTDesign Makerspace" />
+      <meta property="twitter:title" content={newTitle} />
       <meta
         property="twitter:description"
         content="UTDesign Makerspace is a free-to-use place of innovation, collaboration, and education for all majors."
