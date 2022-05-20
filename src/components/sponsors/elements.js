@@ -3,24 +3,39 @@ import styled from "styled-components";
 export const SponsorsContainer = styled.div`
   background: #f6f6f6;
   position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
 `;
 
 export const SponsorsWrapper = styled.div`
-  padding-bottom: 50px;
-  padding-left: 56px;
-  padding-right: 56px;
+  display: grid;
+  z-index: 1;
+  width: 100%;
   max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 24px;
+  grid-auto-columns: minmax(auto, 1fr);
+  justify-items: center;
+  grid-template-areas: "col1 col2";
+
+  @media screen and (max-width: 768px) {
+    grid-template-areas: "col1" "col2";
+  }
+`;
+
+export const SponsorsColumn = styled.div`
+  margin: 50px 32px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  grid-area: col1;
+`;
 
-  :first-of-type {
-    padding-top: 50px;
-  }
+export const PartnersColumn = styled.div`
+  margin: 50px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-area: col2;
 `;
 
 export const SponsorsText = styled.div`
