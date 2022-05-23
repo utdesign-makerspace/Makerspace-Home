@@ -26,6 +26,15 @@ class CalendarXML extends React.Component {
   }
 
   render() {
+    let buttons;
+    if (window.innerWidth > 768)
+      buttons = "today dayGridMonth,listWeek prev,next";
+    else buttons = "today prev,next";
+
+    let def;
+    if (window.innerWidth > 768) def = "dayGridMonth";
+    else def = "listWeek";
+
     return (
       <>
         {this.state.modalOpen && (
@@ -66,7 +75,7 @@ class CalendarXML extends React.Component {
         <CalContainer>
           <CalWrapper>
             <FullCalendar
-              defaultView="dayGridMonth"
+              initialView={def}
               plugins={[
                 dayGridPlugin,
                 interactionPlugin,
@@ -82,7 +91,7 @@ class CalendarXML extends React.Component {
               height="100%"
               eventColor="#c1393d"
               headerToolbar={{
-                right: "today dayGridMonth,listWeek prev,next",
+                right: buttons,
               }}
               buttonText={{
                 today: "Today",
