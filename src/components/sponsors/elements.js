@@ -28,6 +28,10 @@ export const SponsorsColumn = styled.div`
   flex-direction: column;
   align-items: center;
   grid-area: col1;
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 0;
+  }
 `;
 
 export const PartnersColumn = styled.div`
