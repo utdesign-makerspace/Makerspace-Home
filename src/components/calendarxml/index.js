@@ -21,6 +21,7 @@ class CalendarXML extends React.Component {
         start: new Date(),
         end: new Date(),
         link: "",
+        googleLink: "",
       },
     };
   }
@@ -68,6 +69,7 @@ class CalendarXML extends React.Component {
                   )}
                 </span>
               }
+              googleCalendar={this.state.currentEvent.googleLink}
               link={this.state.currentEvent.link}
             />
           </CalModalAnimation>
@@ -140,7 +142,15 @@ class CalendarXML extends React.Component {
       link = null;
     }
     this.setState({
-      currentEvent: { title, start, end, description, link, location },
+      currentEvent: {
+        title,
+        start,
+        end,
+        description,
+        link,
+        location,
+        googleLink: arg.event.url + "&ctz=America%2FChicago",
+      },
       modalOpen: true,
     });
     // console.log(this.state.currentEvent);

@@ -12,7 +12,14 @@ import {
 import { ButtonLink } from "../button";
 import { FaTimes } from "react-icons/fa";
 
-const CalendarModal = ({ hideFunction, title, description, time, link }) => {
+const CalendarModal = ({
+  hideFunction,
+  title,
+  description,
+  time,
+  googleCalendar,
+  link,
+}) => {
   return (
     <>
       <CalModalBackground onClick={hideFunction} />
@@ -24,13 +31,16 @@ const CalendarModal = ({ hideFunction, title, description, time, link }) => {
           <EventName>{title}</EventName>
           <EventTime>{time}</EventTime>
           <EventDescription>{description}</EventDescription>
-          {link && (
-            <CalButtonWrapper>
+          <CalButtonWrapper>
+            <ButtonLink href={googleCalendar} target="_blank">
+              Add to Google Calendar
+            </ButtonLink>
+            {link && (
               <ButtonLink href={link} target="_blank">
                 More Info
               </ButtonLink>
-            </CalButtonWrapper>
-          )}
+            )}
+          </CalButtonWrapper>
         </CalModalContainer>
       </CalModalWrapper>
     </>
