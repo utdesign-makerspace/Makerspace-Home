@@ -8,12 +8,12 @@ import {
   HeroCopyright,
 } from "./elements";
 
-import AIAABg from "../../images/hero/aiaa.png";
-import ArcadeBg from "../../images/hero/arcade.png";
-import CosplayBg from "../../images/hero/cosplay.png";
-import PrintersBg from "../../images/hero/printers.png";
-import SGDA1Bg from "../../images/hero/sgda1.png";
-import SGDA2Bg from "../../images/hero/sgda2.png";
+import AIAABg from "../../images/hero/aiaa.jpg";
+import ArcadeBg from "../../images/hero/arcade.jpg";
+import CosplayBg from "../../images/hero/cosplay.jpg";
+import PrintersBg from "../../images/hero/printers.jpg";
+import SGDA1Bg from "../../images/hero/sgda1.jpg";
+import SGDA2Bg from "../../images/hero/sgda2.jpg";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectFade, Pagination, Navigation } from "swiper";
