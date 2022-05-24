@@ -1,31 +1,18 @@
 import React from "react";
-import { graphql, Link } from "gatsby";
+import { graphql } from "gatsby";
 import Navbar from "../components/navbar";
 import Fonts from "../fonts/fonts";
 import HelmetComponent from "../components/helmet";
+import BlogComponent from "../components/blog";
 import "./style.css";
 
 const Blog = ({ data }) => {
-  const { posts } = data.blog;
-
   return (
     <>
       <Fonts />
       <HelmetComponent title="Blog" />
       <Navbar />
-      <h1>My blog posts</h1>
-
-      {posts.map((post) => (
-        <article key={post.id}>
-          <Link to={"/blog" + post.fields.slug}>
-            <h2>{post.frontmatter.title}</h2>
-          </Link>
-          <small>
-            {post.frontmatter.author}, {post.frontmatter.date}
-          </small>
-          <p>{post.excerpt}</p>
-        </article>
-      ))}
+      <BlogComponent data={data} />
     </>
   );
 };
