@@ -67,7 +67,7 @@ class CalendarXML extends React.Component {
                 listPlugin,
                 googleCalendarPlugin,
               ]}
-              googleCalendarApiKey={process.env.GCAL_API_KEY}
+              googleCalendarApiKey={process.env.GATSBY_GCAL_API_KEY}
               initialEvents={{
                 googleCalendarId:
                   "8sv5eeliouchn2dodnoqb5tj0g@group.calendar.google.com",
