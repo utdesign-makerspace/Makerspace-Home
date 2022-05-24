@@ -3,14 +3,15 @@ import {
   CalModalBackground,
   CalModalWrapper,
   CalModalContainer,
-  CalButtonWrapper,
   EventName,
   EventTime,
   EventDescription,
   CalCloseModal,
+  CalLink,
+  CalLinkWrapper,
 } from "./elements";
-import { ButtonLink } from "../button";
-import { FaTimes } from "react-icons/fa";
+import { FaTimes, FaLink } from "react-icons/fa";
+import { SiGooglecalendar } from "react-icons/si";
 
 const CalendarModal = ({
   hideFunction,
@@ -31,16 +32,16 @@ const CalendarModal = ({
           <EventName>{title}</EventName>
           <EventTime>{time}</EventTime>
           <EventDescription>{description}</EventDescription>
-          <CalButtonWrapper>
-            <ButtonLink href={googleCalendar} target="_blank">
-              Add to Google Calendar
-            </ButtonLink>
+          <CalLinkWrapper>
+            <CalLink href={googleCalendar} target="_blank">
+              <SiGooglecalendar />
+            </CalLink>
             {link && (
-              <ButtonLink href={link} target="_blank">
-                More Info
-              </ButtonLink>
+              <CalLink href={link} target="_blank">
+                <FaLink />
+              </CalLink>
             )}
-          </CalButtonWrapper>
+          </CalLinkWrapper>
         </CalModalContainer>
       </CalModalWrapper>
     </>

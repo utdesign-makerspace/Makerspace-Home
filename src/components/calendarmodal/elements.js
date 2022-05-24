@@ -29,11 +29,11 @@ export const CalModalContainer = styled.div`
   pointer-events: all;
 `;
 
-export const CalButtonWrapper = styled.div`
+export const CalLinkWrapper = styled.div`
   display: flex;
   margin-left: auto;
   justify-content: left;
-  margin-top: 24px;
+  margin-top: 8px;
 
   > * {
     margin-right: 10px;
@@ -41,6 +41,11 @@ export const CalButtonWrapper = styled.div`
   > *:last-child {
     margin-right: 0px;
   }
+`;
+
+export const CalLink = styled.a`
+  text-decoration: none;
+  color: #000;
 `;
 
 export const CalCloseModal = styled.div`
@@ -51,9 +56,7 @@ export const CalCloseModal = styled.div`
   outline: none;
 `;
 
-export const EventName = styled.h1`
-  margin-bottom: 0px;
-`;
+export const EventName = styled.h1``;
 
 export const EventTime = styled.p`
   margin-bottom: 8px;

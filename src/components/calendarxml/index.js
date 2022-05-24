@@ -47,28 +47,7 @@ class CalendarXML extends React.Component {
               hideFunction={() => this.setState({ modalOpen: false })}
               title={this.state.currentEvent.title}
               description={this.state.currentEvent.description}
-              time={
-                <span>
-                  {this.state.currentEvent.start.toLocaleString("en-US", {
-                    hour: "numeric",
-                    minute: "numeric",
-                    hour12: true,
-                  })}{" "}
-                  -{" "}
-                  {this.state.currentEvent.end.toLocaleString("en-US", {
-                    hour: "numeric",
-                    minute: "numeric",
-                    hour12: true,
-                  })}{" "}
-                  on{" "}
-                  {this.state.currentEvent.start.toLocaleString("default", {
-                    month: "long",
-                  })}{" "}
-                  {this.getNumeralOrdinal(
-                    this.state.currentEvent.start.getDate()
-                  )}
-                </span>
-              }
+              time={<span>{this.getTimeString()}</span>}
               googleCalendar={this.state.currentEvent.googleLink}
               link={this.state.currentEvent.link}
             />
@@ -107,6 +86,38 @@ class CalendarXML extends React.Component {
       </>
     );
   }
+
+  getTimeString = () => {
+    const startTime = this.state.currentEvent.start.toLocaleString("en-US", {
+      hour: "numeric",
+      minute: "numeric",
+      hour12: true,
+    });
+
+    const startDay =
+      this.state.currentEvent.start.toLocaleString("default", {
+        month: "long",
+      }) +
+      " " +
+      this.getNumeralOrdinal(this.state.currentEvent.start.getDate());
+
+    const endTime = this.state.currentEvent.end.toLocaleString("en-US", {
+      hour: "numeric",
+      minute: "numeric",
+      hour12: true,
+    });
+
+    const endDay =
+      this.state.currentEvent.end.toLocaleString("default", {
+        month: "long",
+      }) +
+      " " +
+      this.getNumeralOrdinal(this.state.currentEvent.end.getDate());
+
+    if (startDay == endDay) return `${startTime} — ${endTime}, ${startDay}`;
+    return `${startTime}, ${startDay} — ${endTime}, ${endDay}`;
+  };
+
   getNumeralOrdinal = (number) =>
     number +
     (["th", "st", "nd", "rd"][((number % 100) - 20) % 10] ||
