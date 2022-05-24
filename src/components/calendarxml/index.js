@@ -1,4 +1,5 @@
 import React from "react";
+import { AnimatePresence } from "framer-motion";
 
 import FullCalendar from "@fullcalendar/react";
 import dayGridPlugin from "@fullcalendar/daygrid";
@@ -38,21 +39,24 @@ class CalendarXML extends React.Component {
 
     return (
       <>
-        {this.state.modalOpen && (
-          <CalModalAnimation
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1, transition: { duration: 0.5 } }}
-          >
-            <CalendarModal
-              hideFunction={() => this.setState({ modalOpen: false })}
-              title={this.state.currentEvent.title}
-              description={this.state.currentEvent.description}
-              time={<span>{this.getTimeString()}</span>}
-              googleCalendar={this.state.currentEvent.googleLink}
-              link={this.state.currentEvent.link}
-            />
-          </CalModalAnimation>
-        )}
+        <AnimatePresence>
+          {this.state.modalOpen && (
+            <CalModalAnimation
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1, transition: { duration: 0.25 } }}
+              exit={{ opacity: 0, transition: { duration: 0.25 } }}
+            >
+              <CalendarModal
+                hideFunction={() => this.setState({ modalOpen: false })}
+                title={this.state.currentEvent.title}
+                description={this.state.currentEvent.description}
+                time={<span>{this.getTimeString()}</span>}
+                googleCalendar={this.state.currentEvent.googleLink}
+                link={this.state.currentEvent.link}
+              />
+            </CalModalAnimation>
+          )}
+        </AnimatePresence>
         <CalContainer>
           <CalWrapper>
             <FullCalendar
@@ -64,7 +68,7 @@ class CalendarXML extends React.Component {
                 googleCalendarPlugin,
               ]}
               googleCalendarApiKey="AIzaSyCSNMxYW6PAh1QM0woCWwRnmZKZtm_6sFw"
-              events={{
+              initialEvents={{
                 googleCalendarId:
                   "8sv5eeliouchn2dodnoqb5tj0g@group.calendar.google.com",
                 className: "cal-event",
