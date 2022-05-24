@@ -67,7 +67,7 @@ class CalendarXML extends React.Component {
                 listPlugin,
                 googleCalendarPlugin,
               ]}
-              googleCalendarApiKey="AIzaSyCSNMxYW6PAh1QM0woCWwRnmZKZtm_6sFw"
+              googleCalendarApiKey={process.env.GCAL_API_KEY}
               initialEvents={{
                 googleCalendarId:
                   "8sv5eeliouchn2dodnoqb5tj0g@group.calendar.google.com",
@@ -118,7 +118,7 @@ class CalendarXML extends React.Component {
       " " +
       this.getNumeralOrdinal(this.state.currentEvent.end.getDate());
 
-    if (startDay == endDay) return `${startTime} — ${endTime}, ${startDay}`;
+    if (startDay === endDay) return `${startTime} — ${endTime}, ${startDay}`;
     return `${startTime}, ${startDay} — ${endTime}, ${endDay}`;
   };
 
