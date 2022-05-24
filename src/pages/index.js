@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Fonts from "../fonts/fonts";
 import Navbar from "../components/navbar/index";
 import Sidebar from "../components/sidebar/index";
 import Hero from "../components/hero/index";
@@ -18,7 +17,6 @@ const IndexPage = () => {
 
   return (
     <>
-      <Fonts />
       <HelmetComponent />
       <Navbar toggle={toggle} transparent={true} />
       <Sidebar isOpen={isOpen} toggle={toggle} />

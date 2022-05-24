@@ -15,6 +15,7 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@fontsource/roboto": "^4.5.7",
     "@fullcalendar/daygrid": "^5.11.0",
     "@fullcalendar/google-calendar": "^5.11.0",
     "@fullcalendar/interaction": "^5.11.0",

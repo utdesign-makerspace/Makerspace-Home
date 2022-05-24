@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Fonts from "../fonts/fonts";
 import Navbar from "../components/navbar/index";
 import Sidebar from "../components/sidebar/index";
 import Calendar from "../components/calendar";
@@ -15,7 +14,6 @@ const CalendarPage = () => {
 
   return (
     <>
-      <Fonts />
       <HelmetComponent title="Calendar" />
       <Navbar toggle={toggle} />
       <Sidebar isOpen={isOpen} toggle={toggle} />
