@@ -17,7 +17,7 @@ const Blog = ({ data }) => {
 
       {posts.map((post) => (
         <article key={post.id}>
-          <Link to={post.fields.slug}>
+          <Link to={"/blog" + post.fields.slug}>
             <h2>{post.frontmatter.title}</h2>
           </Link>
           <small>

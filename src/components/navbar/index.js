@@ -32,6 +32,9 @@ const Navbar = ({ toggle, transparent }) => {
         </MobileIcon>
         <NavMenu>
           <NavItem>
+            <NavLinkG to="/blog">Blog</NavLinkG>
+          </NavItem>
+          <NavItem>
             <NavLinkG to="/calendar">Calendar</NavLinkG>
           </NavItem>
           <NavItem>

@@ -21,6 +21,7 @@ const Sidebar = ({ isOpen, toggle }) => {
       </Icon>
       <SidebarWrapper>
         <SidebarMenu>
+          <SidebarLinkG to="/blog">Blog</SidebarLinkG>
           <SidebarLinkG to="/calendar">Calendar</SidebarLinkG>
           <SidebarLinkA href="https://learn.utd.ms/">Training</SidebarLinkA>
           <SidebarLinkA href="https://wiki.utd.ms/">Wiki</SidebarLinkA>
