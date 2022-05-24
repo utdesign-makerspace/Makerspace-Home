@@ -7,8 +7,8 @@ export const BlogPostWrapper = styled.div`
 `;
 
 export const BlogPostContainer = styled.div`
-  margin: 50px 20px;
-  max-width: 1000px;
+  margin: 50px 32px;
+  max-width: 700px;
 `;
 
 export const BlogPostContent = styled.section`
@@ -20,7 +20,23 @@ export const BlogPostContent = styled.section`
     margin-top: 10px;
   }
 
-  h2 {
+  ul,
+  ol {
+    margin-top: 6px;
+    margin-left: 15px;
+  }
+
+  li {
+    margin-top: 4px;
+    margin-bottom: 4px;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     margin-top: 20px;
   }
 `;

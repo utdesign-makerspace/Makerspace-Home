@@ -3,6 +3,7 @@ import { graphql } from "gatsby";
 import Navbar from "../../components/navbar";
 import Fonts from "../../fonts/fonts";
 import HelmetComponent from "../../components/helmet";
+import Footer from "../../components/footer";
 import {
   BlogPostContainer,
   BlogPostContent,
@@ -33,6 +34,7 @@ export default function BlogPost({ data }) {
           <BlogPostContent dangerouslySetInnerHTML={{ __html: post.html }} />
         </BlogPostContainer>
       </BlogPostWrapper>
+      <Footer />
     </>
   );
 }
