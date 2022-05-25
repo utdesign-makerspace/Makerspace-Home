@@ -1,18 +1,18 @@
 import React from "react";
 import { graphql } from "gatsby";
 import Navbar from "../components/navbar";
-import Fonts from "../fonts/fonts";
 import HelmetComponent from "../components/helmet";
 import BlogComponent from "../components/blog";
+import Footer from "../components/footer";
 import "./style.css";
 
 const Blog = ({ data }) => {
   return (
     <>
-      <Fonts />
       <HelmetComponent title="Blog" />
       <Navbar />
       <BlogComponent data={data} />
+      <Footer />
     </>
   );
 };

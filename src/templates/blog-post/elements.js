@@ -12,6 +12,9 @@ export const BlogPostContainer = styled.div`
 `;
 
 export const BlogPostContent = styled.section`
+  display: flex;
+  flex-direction: column;
+
   *:first-child {
     margin-top: 0px;
   }
@@ -38,5 +41,18 @@ export const BlogPostContent = styled.section`
   h5,
   h6 {
     margin-top: 20px;
+  }
+
+  img {
+    width: 100%;
+    margin-top: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  blockquote {
+    color: #888;
+    font-size: 0.8em;
+    text-align: center;
   }
 `;

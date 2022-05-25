@@ -1,7 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
 import Navbar from "../../components/navbar";
-import Fonts from "../../fonts/fonts";
 import HelmetComponent from "../../components/helmet";
 import Footer from "../../components/footer";
 import {
@@ -15,7 +14,6 @@ export default function BlogPost({ data }) {
 
   return (
     <>
-      <Fonts />
       <HelmetComponent title={post.frontmatter.title} />
       <Navbar />
       <BlogPostWrapper>
