@@ -49,6 +49,10 @@ export const BlogPostContent = styled.section`
     font-size: 1.5em;
   }
 
+  .gatsby-resp-image-figure {
+    margin-top: 20px;
+  }
+
   .gatsby-resp-image-figcaption {
     margin-top: 2px;
     color: #888;
