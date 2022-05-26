@@ -26,7 +26,7 @@ export const BlogPostContent = styled.section`
   ul,
   ol {
     margin-top: 6px;
-    margin-left: 15px;
+    padding-inline-start: 24px;
   }
 
   li {
