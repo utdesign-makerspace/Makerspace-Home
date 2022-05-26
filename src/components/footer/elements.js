@@ -5,6 +5,7 @@ export const FooterContainer = styled.div`
   padding: 20px 40px;
   justify-content: center;
   display: flex;
+  box-shadow: 0 50vh 0 50vh #343a40;
 `;
 
 export const FooterWrapper = styled.div`
