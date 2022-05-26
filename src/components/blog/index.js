@@ -6,6 +6,7 @@ import {
   BlogLinkText,
   BlogLinkContainer,
 } from "./elements";
+import moment from "moment";
 
 const Blog = ({ data }) => {
   const { posts } = data.blog;
@@ -25,7 +26,9 @@ const Blog = ({ data }) => {
                 <BlogLinkText key={post.id}>
                   <h2>{post.frontmatter.title}</h2>
                   <p>{post.frontmatter.description}</p>
-                  <small>{post.frontmatter.date}</small>
+                  <small>
+                    {moment(post.frontmatter.date).local().fromNow()}
+                  </small>
                 </BlogLinkText>
               </BlogLink>
             </>

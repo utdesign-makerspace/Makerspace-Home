@@ -1,13 +1,13 @@
 ---
 title: Welcome to Our New Website
-description: An introduction to our new website
-date: 2022-05-22
+description: Detailing changes to our website
+date: 2022-05-26 14:50
 thumbnail: ../images/blog/hero.png
 ---
 
 <!---
 Make sure you follow these rules while writing:
-1) Make sure your date follows the YEAR-MONTH-DAY format, preferably with leading zeroes.
+1) Make sure your date follows the YEAR-MONTH-DAY HR:MN format in military time, preferably with leading zeroes.
 2) Use image credits or subtitles when possible. For example: ![Image credit: UTDesign Makerspace](../images/blog/new-website-1.png)
 
 Some notes:
@@ -40,4 +40,4 @@ Our calendar has also been adjusted to have a modern look. We attempted to impro
 
 # More to come
 
-This is only one of many announcements regarding changes we're making over the summer. Many things are coming, like a new look in the open lab and the release of the Makerspace Arcade. Stay tuned in our Discord server for more updates like this one!
+This is only one of many announcements regarding changes we're making over the summer. Many things are coming, like changes to the open lab and the release of the Makerspace Arcade. Stay tuned in our Discord server for more updates like this one!
