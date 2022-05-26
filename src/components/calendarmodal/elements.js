@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import ICalendarLink from "react-icalendar-link";
 
 export const CalModalBackground = styled.div`
   position: fixed;
@@ -44,6 +45,11 @@ export const CalLinkWrapper = styled.div`
 `;
 
 export const CalLink = styled.a`
+  text-decoration: none;
+  color: #000;
+`;
+
+export const CalICalendarLink = styled(ICalendarLink)`
   text-decoration: none;
   color: #000;
 `;

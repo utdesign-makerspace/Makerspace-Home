@@ -53,6 +53,17 @@ class CalendarXML extends React.Component {
                 time={<span>{this.getTimeString()}</span>}
                 googleCalendar={this.state.currentEvent.googleLink}
                 link={this.state.currentEvent.link}
+                icalObject={{
+                  title: this.state.currentEvent.title,
+                  description:
+                    this.state.currentEvent.description +
+                    (this.state.currentEvent.link
+                      ? ` ${this.state.currentEvent.link}`
+                      : ""),
+                  startTime: this.state.currentEvent.start,
+                  endTime: this.state.currentEvent.end,
+                  location: "3000 Waterview Pkwy, Richardson TX 75080",
+                }}
               />
             </CalModalAnimation>
           )}

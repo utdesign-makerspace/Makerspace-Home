@@ -9,8 +9,9 @@ import {
   CalCloseModal,
   CalLink,
   CalLinkWrapper,
+  CalICalendarLink,
 } from "./elements";
-import { FaTimes, FaLink } from "react-icons/fa";
+import { FaTimes, FaLink, FaDownload } from "react-icons/fa";
 import { SiGooglecalendar } from "react-icons/si";
 
 const CalendarModal = ({
@@ -20,6 +21,7 @@ const CalendarModal = ({
   time,
   googleCalendar,
   link,
+  icalObject,
 }) => {
   return (
     <>
@@ -33,6 +35,9 @@ const CalendarModal = ({
           <EventTime>{time}</EventTime>
           <EventDescription>{description}</EventDescription>
           <CalLinkWrapper>
+            <CalICalendarLink filename="utdmsevent.ics" event={icalObject}>
+              <FaDownload />
+            </CalICalendarLink>
             <CalLink href={googleCalendar} target="_blank">
               <SiGooglecalendar />
             </CalLink>
