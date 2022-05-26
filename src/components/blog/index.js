@@ -13,8 +13,8 @@ const Blog = ({ data }) => {
           <Link to={post.fields.slug}>
             <h2>{post.frontmatter.title}</h2>
           </Link>
+          <p>{post.frontmatter.description}</p>
           <small>{post.frontmatter.date}</small>
-          <p>{post.excerpt}</p>
         </article>
       ))}
     </>

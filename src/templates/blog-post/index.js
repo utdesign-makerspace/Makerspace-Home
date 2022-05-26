@@ -30,7 +30,7 @@ export default function BlogPost({ data }) {
       <BlogPostWrapper>
         <BlogPostContainer>
           <h1>{post.frontmatter.title}</h1>
-          <p>An introduction to our new website</p>
+          <p>{post.frontmatter.description}</p>
           <small>
             {new Date(post.frontmatter.date).toLocaleString("default", {
               month: "long",
@@ -75,6 +75,7 @@ export const query = graphql`
       }
       frontmatter {
         title
+        description
         date
       }
     }

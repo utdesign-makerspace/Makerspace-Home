@@ -1,5 +1,6 @@
 ---
 title: Welcome to Our New Website
+description: An introduction to our new website
 date: 2022-05-22
 ---
 

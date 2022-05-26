@@ -29,6 +29,7 @@ export const pageQuery = graphql`
         frontmatter {
           date(fromNow: true)
           title
+          description
         }
         excerpt(pruneLength: 160)
       }
