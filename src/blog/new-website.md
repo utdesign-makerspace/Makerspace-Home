@@ -2,6 +2,7 @@
 title: Welcome to Our New Website
 description: An introduction to our new website
 date: 2022-05-22
+thumbnail: ../images/blog/hero.png
 ---
 
 <!---
@@ -9,9 +10,12 @@ Make sure you follow these rules while writing:
 1) Make sure your date follows the YEAR-MONTH-DAY format, preferably with leading zeroes.
 2) Only use H2 (##) or lower level headers.
 3) Follow up images (![](URL)) with image credits (> Image credit: UTDesign Makerspace).
+
+Some notes:
+• H1 (#) and H2 (##) have the same font-size to avoid conflicting with the title of the page.
 -->
 
-## New homepage
+# New homepage
 
 The UTDesign Makerspace website has received a new look altogether. However, one section that was a big focus for us was the homepage. This is our first impression on Comets hearing about us for the first time, so we wanted to make sure we present ourselves well.
 
@@ -26,7 +30,7 @@ The UTDesign Makerspace website has received a new look altogether. However, one
 
 > Image credit: UTDesign Makerspace
 
-## New calendar
+# New calendar
 
 Our calendar has also been adjusted to have a modern look. We attempted to improve the calendar by improving its usability and giving it more space on our website.
 
@@ -39,6 +43,6 @@ Our calendar has also been adjusted to have a modern look. We attempted to impro
 
 > Image credit: UTDesign Makerspace
 
-## More to come
+# More to come
 
 This is only one of many announcements regarding changes we're making over the summer. Many things are coming, like a new look in the open lab and the release of the Makerspace Arcade. Stay tuned in our Discord server for more updates like this one!

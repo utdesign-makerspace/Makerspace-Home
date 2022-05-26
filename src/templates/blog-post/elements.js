@@ -45,6 +45,10 @@ export const BlogPostContent = styled.section`
     margin-top: 20px;
   }
 
+  h1 {
+    font-size: 1.5em;
+  }
+
   img {
     width: 100%;
     margin-top: 20px;

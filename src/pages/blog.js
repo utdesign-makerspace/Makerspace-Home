@@ -30,6 +30,11 @@ export const pageQuery = graphql`
           date(fromNow: true)
           title
           description
+          thumbnail {
+            childImageSharp {
+              gatsbyImageData(layout: CONSTRAINED)
+            }
+          }
         }
         excerpt(pruneLength: 160)
       }

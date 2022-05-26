@@ -1,22 +1,37 @@
 import React from "react";
-import { Link } from "gatsby";
+import {
+  BlogLink,
+  BlogLinkWrapper,
+  BlogLinkThumbnail,
+  BlogLinkText,
+  BlogLinkContainer,
+} from "./elements";
 
 const Blog = ({ data }) => {
   const { posts } = data.blog;
 
   return (
     <>
-      <h1>My blog posts</h1>
-
-      {posts.map((post) => (
-        <article key={post.id}>
-          <Link to={post.fields.slug}>
-            <h2>{post.frontmatter.title}</h2>
-          </Link>
-          <p>{post.frontmatter.description}</p>
-          <small>{post.frontmatter.date}</small>
-        </article>
-      ))}
+      <BlogLinkWrapper>
+        <BlogLinkContainer>
+          {posts.map((post) => (
+            <>
+              <BlogLink to={post.fields.slug}>
+                <BlogLinkThumbnail
+                  image={
+                    post.frontmatter.thumbnail.childImageSharp.gatsbyImageData
+                  }
+                />
+                <BlogLinkText key={post.id}>
+                  <h2>{post.frontmatter.title}</h2>
+                  <p>{post.frontmatter.description}</p>
+                  <small>{post.frontmatter.date}</small>
+                </BlogLinkText>
+              </BlogLink>
+            </>
+          ))}
+        </BlogLinkContainer>
+      </BlogLinkWrapper>
     </>
   );
 };
