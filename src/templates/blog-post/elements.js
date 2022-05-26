@@ -49,14 +49,8 @@ export const BlogPostContent = styled.section`
     font-size: 1.5em;
   }
 
-  img {
-    width: 100%;
-    margin-top: 20px;
-    padding-left: 100px;
-    padding-right: 100px;
-  }
-
-  blockquote {
+  .gatsby-resp-image-figcaption {
+    margin-top: 2px;
     color: #888;
     font-size: 0.8em;
     text-align: center;

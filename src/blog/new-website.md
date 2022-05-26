@@ -8,8 +8,7 @@ thumbnail: ../images/blog/hero.png
 <!---
 Make sure you follow these rules while writing:
 1) Make sure your date follows the YEAR-MONTH-DAY format, preferably with leading zeroes.
-2) Only use H2 (##) or lower level headers.
-3) Follow up images (![](URL)) with image credits (> Image credit: UTDesign Makerspace).
+2) Use image credits or subtitles when possible. For example: ![Image credit: UTDesign Makerspace](../images/blog/new-website-1.png)
 
 Some notes:
 • H1 (#) and H2 (##) have the same font-size to avoid conflicting with the title of the page.
@@ -26,9 +25,7 @@ The UTDesign Makerspace website has received a new look altogether. However, one
 - The FAQ section has been removed as we prefer members refer to the wiki for the most up to date information.
 - A list of sponsors and partners has been added.
 
-![](https://i.imgur.com/cpwomfj.png)
-
-> Image credit: UTDesign Makerspace
+![Our new frontpage](../images/blog/new-website-1.png)
 
 # New calendar
 
@@ -39,9 +36,7 @@ Our calendar has also been adjusted to have a modern look. We attempted to impro
 - Buttons in event modals are now icons. This should save space and make the modal look modern compared to its previous design.
 - All events now have download and Google Calendar buttons, allowing members to easily add events in the Makerspace to their own calendars.
 
-![](https://i.imgur.com/o85NEAG.png)
-
-> Image credit: UTDesign Makerspace
+![Our new calendar and modal](../images/blog/new-website-2.png)
 
 # More to come
 
