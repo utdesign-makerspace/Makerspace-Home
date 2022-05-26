@@ -10,7 +10,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     createNodeField({
       node,
       name: `slug`,
-      value: slug,
+      value: "/blog" + slug,
     });
   }
 };
@@ -33,7 +33,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
     createPage({
-      path: "/blog" + node.fields.slug,
+      path: node.fields.slug,
       component: path.resolve(`./src/templates/blog-post/index.js`),
       context: {
         // Data passed to context is available

@@ -1,8 +1,10 @@
 import styled from "styled-components";
+import { Link } from "gatsby";
 
 export const BlogPostWrapper = styled.div`
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
 `;
 
@@ -55,4 +57,19 @@ export const BlogPostContent = styled.section`
     font-size: 0.8em;
     text-align: center;
   }
+`;
+
+export const BlogPostNavigation = styled(Link)`
+  text-decoration: none;
+  font-weight: bolder;
+  color: #c1393d;
+`;
+
+export const BlogPostNavigationWrapper = styled.ul`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  margin-top: 50px;
+  max-width: 100%;
 `;

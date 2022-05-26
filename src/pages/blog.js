@@ -20,8 +20,8 @@ const Blog = ({ data }) => {
 export default Blog;
 
 export const pageQuery = graphql`
-  query MyQuery {
-    blog: allMarkdownRemark {
+  query BlogQuery {
+    blog: allMarkdownRemark(sort: { fields: frontmatter___date, order: DESC }) {
       posts: nodes {
         fields {
           slug
@@ -30,8 +30,7 @@ export const pageQuery = graphql`
           date(fromNow: true)
           title
         }
-        excerpt
-        id
+        excerpt(pruneLength: 160)
       }
     }
   }

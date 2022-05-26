@@ -10,7 +10,7 @@ const Blog = ({ data }) => {
 
       {posts.map((post) => (
         <article key={post.id}>
-          <Link to={"/blog" + post.fields.slug}>
+          <Link to={post.fields.slug}>
             <h2>{post.frontmatter.title}</h2>
           </Link>
           <small>{post.frontmatter.date}</small>

@@ -7,10 +7,21 @@ import {
   BlogPostContainer,
   BlogPostContent,
   BlogPostWrapper,
+  BlogPostNavigation,
+  BlogPostNavigationWrapper,
 } from "./elements";
 
 export default function BlogPost({ data }) {
   const post = data.markdownRemark;
+
+  const previousIndex =
+    data.blog.posts.findIndex((p) => p.fields.slug === post.fields.slug) - 1;
+  const nextIndex =
+    data.blog.posts.findIndex((p) => p.fields.slug === post.fields.slug) + 1;
+
+  const previous = previousIndex >= 0 ? data.blog.posts[previousIndex] : null;
+  const next =
+    nextIndex < data.blog.posts.length ? data.blog.posts[nextIndex] : null;
 
   return (
     <>
@@ -19,6 +30,7 @@ export default function BlogPost({ data }) {
       <BlogPostWrapper>
         <BlogPostContainer>
           <h1>{post.frontmatter.title}</h1>
+          <p>An introduction to our new website</p>
           <small>
             {new Date(post.frontmatter.date).toLocaleString("default", {
               month: "long",
@@ -30,6 +42,24 @@ export default function BlogPost({ data }) {
           <br />
           <br />
           <BlogPostContent dangerouslySetInnerHTML={{ __html: post.html }} />
+          {(next || previous) && (
+            <BlogPostNavigationWrapper>
+              <li>
+                {previous && (
+                  <BlogPostNavigation to={previous.fields.slug}>
+                    {"« " + previous.frontmatter.title}
+                  </BlogPostNavigation>
+                )}
+              </li>
+              <li>
+                {next && (
+                  <BlogPostNavigation to={next.fields.slug}>
+                    {next.frontmatter.title + " »"}
+                  </BlogPostNavigation>
+                )}
+              </li>
+            </BlogPostNavigationWrapper>
+          )}
         </BlogPostContainer>
       </BlogPostWrapper>
       <Footer />
@@ -37,12 +67,25 @@ export default function BlogPost({ data }) {
   );
 }
 export const query = graphql`
-  query BlogQuery($slug: String!) {
+  query BlogPostQuery($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
+      fields {
+        slug
+      }
       frontmatter {
         title
         date
+      }
+    }
+    blog: allMarkdownRemark(sort: { fields: frontmatter___date, order: ASC }) {
+      posts: nodes {
+        fields {
+          slug
+        }
+        frontmatter {
+          title
+        }
       }
     }
   }
