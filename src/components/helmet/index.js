@@ -6,7 +6,7 @@ import SafariPinnedTab from "./safari-pinned-tab.svg";
 
 const HelmetComponent = ({ title, description }) => {
   const newTitle = title
-    ? `UTDesign Makerspace - ${title}`
+    ? `${title} - UTDesign Makerspace`
     : `UTDesign Makerspace`;
 
   const newDescription = description
