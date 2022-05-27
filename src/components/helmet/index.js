@@ -30,6 +30,7 @@ const HelmetComponent = ({ title, description }) => {
       />
       <meta property="og:description" content={newDescription} />
       <meta property="og:image" content={Icon} />
+      {title && <meta name="article:author" content="UTDesign Makerspace" />}
 
       {/* Twitter */}
       <meta
