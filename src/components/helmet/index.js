@@ -4,37 +4,33 @@ import Icon from "../../images/icon.png";
 import AppleTouchIcon from "./apple-touch-icon.png";
 import SafariPinnedTab from "./safari-pinned-tab.svg";
 
-const HelmetComponent = ({ title }) => {
+const HelmetComponent = ({ title, description }) => {
   const newTitle = title
     ? `UTDesign Makerspace - ${title}`
     : `UTDesign Makerspace`;
+
+  const newDescription = description
+    ? description
+    : "UTDesign Makerspace is a free-to-use place of innovation, collaboration, and education for all majors.";
 
   return (
     <Helmet>
       {/* Primary Meta Tags */}
       <title>{newTitle}</title>
-      <meta name="title" content={newTitle} />
-      <meta
-        name="description"
-        content="UTDesign Makerspace is a free-to-use place of innovation, collaboration, and education for all majors."
-      />
+      <meta name="title" content={title ? title : "UTDesign Makerspace"} />
+      {title && <meta name="author" content="UTDesign Makerspace" />}
+      <meta name="description" content={newDescription} />
       <meta name="theme-color" content="#c1393d" />
 
       {/* Open Graph / Facebook */}
       <meta property="og:type" content="website" />
       <meta property="og:title" content={newTitle} />
-      <meta
-        property="og:description"
-        content="UTDesign Makerspace is a free-to-use place of innovation, collaboration, and education for all majors."
-      />
+      <meta property="og:description" content={newDescription} />
       <meta property="og:image" content={Icon} />
 
       {/* Twitter */}
       <meta property="twitter:title" content={newTitle} />
-      <meta
-        property="twitter:description"
-        content="UTDesign Makerspace is a free-to-use place of innovation, collaboration, and education for all majors."
-      />
+      <meta property="twitter:description" content={newDescription} />
       <meta property="twitter:image" content={Icon} />
 
       {/* Other */}

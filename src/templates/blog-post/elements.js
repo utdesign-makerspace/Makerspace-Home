@@ -16,6 +16,9 @@ export const BlogPostContainer = styled.div`
 export const BlogPostContent = styled.section`
   display: flex;
   flex-direction: column;
+  padding-top: 20px;
+  margin-top: 20px;
+  border-top: 2px solid #eee;
 
   *:first-child {
     margin-top: 0px;

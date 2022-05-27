@@ -25,7 +25,10 @@ export default function BlogPost({ data }) {
 
   return (
     <>
-      <HelmetComponent title={post.frontmatter.title} />
+      <HelmetComponent
+        title={post.frontmatter.title}
+        description={post.frontmatter.description}
+      />
       <Navbar />
       <BlogPostWrapper>
         <BlogPostContainer>
@@ -39,8 +42,6 @@ export default function BlogPost({ data }) {
               timeZone: "UTC",
             })}
           </small>
-          <br />
-          <br />
           <BlogPostContent dangerouslySetInnerHTML={{ __html: post.html }} />
           {(next || previous) && (
             <BlogPostNavigationWrapper>
