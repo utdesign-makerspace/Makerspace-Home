@@ -24,12 +24,18 @@ const HelmetComponent = ({ title, description }) => {
 
       {/* Open Graph / Facebook */}
       <meta property="og:type" content="website" />
-      <meta property="og:title" content={newTitle} />
+      <meta
+        property="og:title"
+        content={title ? title : "UTDesign Makerspace"}
+      />
       <meta property="og:description" content={newDescription} />
       <meta property="og:image" content={Icon} />
 
       {/* Twitter */}
-      <meta property="twitter:title" content={newTitle} />
+      <meta
+        property="twitter:title"
+        content={title ? title : "UTDesign Makerspace"}
+      />
       <meta property="twitter:description" content={newDescription} />
       <meta property="twitter:image" content={Icon} />
 
