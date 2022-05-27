@@ -18,7 +18,6 @@ const HelmetComponent = ({ title, description }) => {
       {/* Primary Meta Tags */}
       <title>{newTitle}</title>
       <meta name="title" content={title ? title : "UTDesign Makerspace"} />
-      {title && <meta name="author" content="UTDesign Makerspace" />}
       <meta name="description" content={newDescription} />
       <meta name="theme-color" content="#c1393d" />
 
@@ -28,9 +27,9 @@ const HelmetComponent = ({ title, description }) => {
         property="og:title"
         content={title ? title : "UTDesign Makerspace"}
       />
+      <meta property="og:site_name" content="UTDesign Makerspace"></meta>
       <meta property="og:description" content={newDescription} />
       <meta property="og:image" content={Icon} />
-      {title && <meta name="article:author" content="UTDesign Makerspace" />}
 
       {/* Twitter */}
       <meta
