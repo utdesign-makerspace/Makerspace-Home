@@ -27,7 +27,7 @@ export default function BlogPost({ data }) {
     <>
       <HelmetComponent
         title={post.frontmatter.title}
-        description={post.frontmatter.description}
+        description={`${post.frontmatter.description} — ${post.excerpt}`}
       />
       <Navbar />
       <BlogPostWrapper>
@@ -79,6 +79,7 @@ export const query = graphql`
         description
         date
       }
+      excerpt(pruneLength: 160)
     }
     blog: allMarkdownRemark(sort: { fields: frontmatter___date, order: ASC }) {
       posts: nodes {
