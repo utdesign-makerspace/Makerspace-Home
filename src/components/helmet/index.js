@@ -4,7 +4,7 @@ import Icon from "../../images/icon.png";
 import AppleTouchIcon from "./apple-touch-icon.png";
 import SafariPinnedTab from "./safari-pinned-tab.svg";
 
-const HelmetComponent = ({ title, description }) => {
+const HelmetComponent = ({ title, description, image }) => {
   const newTitle = title
     ? `${title} - UTDesign Makerspace`
     : `UTDesign Makerspace`;
@@ -27,9 +27,9 @@ const HelmetComponent = ({ title, description }) => {
         property="og:title"
         content={title ? title : "UTDesign Makerspace"}
       />
-      <meta property="og:site_name" content="UTDesign Makerspace"></meta>
+      <meta property="og:site_name" content="UTDesign Makerspace" />
       <meta property="og:description" content={newDescription} />
-      <meta property="og:image" content={Icon} />
+      <meta property="og:image" content={image ? image : Icon} />
 
       {/* Twitter */}
       <meta
@@ -37,7 +37,7 @@ const HelmetComponent = ({ title, description }) => {
         content={title ? title : "UTDesign Makerspace"}
       />
       <meta property="twitter:description" content={newDescription} />
-      <meta property="twitter:image" content={Icon} />
+      <meta property="twitter:image" content={image ? image : Icon} />
 
       {/* Other */}
       <link rel="apple-touch-icon" sizes="180x180" href={AppleTouchIcon} />
