@@ -38,6 +38,7 @@ const HelmetComponent = ({ title, description, image }) => {
       />
       <meta property="twitter:description" content={newDescription} />
       <meta property="twitter:image" content={image ? image : Icon} />
+      {image && <meta property="twitter:card" content="summary_large_image" />}
 
       {/* Other */}
       <link rel="apple-touch-icon" sizes="180x180" href={AppleTouchIcon} />
