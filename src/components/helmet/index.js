@@ -22,8 +22,7 @@ const HelmetComponent = ({ title, description, image }) => {
       <meta name="theme-color" content="#c1393d" />
 
       {/* Open Graph / Facebook */}
-      {!image && <meta property="og:type" content="website" />}
-      {image && <meta property="og:type" content="article" />}
+      <meta property="og:type" content={image ? "article" : "website"} />
       <meta
         property="og:title"
         content={title ? title : "UTDesign Makerspace"}
