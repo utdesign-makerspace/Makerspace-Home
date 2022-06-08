@@ -9,14 +9,17 @@ thumbnail: ../images/blog/hero.png
 Make sure you follow these rules while writing:
 1) Make sure your date follows the YEAR-MONTH-DAY HR:MN format in military time, preferably with leading zeroes.
 2) Use image credits or subtitles when possible. For example: ![Image credit: UTDesign Makerspace](../images/blog/new-website-1.png)
+3) Include a short >160 character intro at the beginning of your article if possible.
 
 Some notes:
 • H1 (#) and H2 (##) have the same font-size to avoid conflicting with the title of the page.
 -->
 
+Our older website had a lot of flaws that we wanted to improve on, but we decided that it would be easier to create a new website overall. With our new website, we decided to focus on a new and modern look that we can use for years to come.
+
 # New homepage
 
-The UTDesign Makerspace website has received a new look altogether. However, one section that was a big focus for us was the homepage. This is our first impression on Comets hearing about us for the first time, so we wanted to make sure we present ourselves well.
+One section that was a big focus for us was the homepage. This is our first impression on Comets hearing about us for the first time, so we wanted to make sure we present ourselves well.
 
 - Our branding has been updated. This includes new fonts, colors, and logos.
 - A new hero showcases images and taglines inspired by the various hobbies that make up our community. Special thanks to Erik Nguyen, the Student Game Developer Association, and Thomas Cortez for the first lineup of images!

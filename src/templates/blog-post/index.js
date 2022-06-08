@@ -1,6 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
-import { getSrc } from "gatsby-plugin-image";
+import { GatsbyImage, getSrc } from "gatsby-plugin-image";
 import Navbar from "../../components/navbar";
 import HelmetComponent from "../../components/helmet";
 import Footer from "../../components/footer";
@@ -10,6 +10,7 @@ import {
   BlogPostWrapper,
   BlogPostNavigation,
   BlogPostNavigationWrapper,
+  BlogPostHeader,
 } from "./elements";
 
 export default function BlogPost({ data }) {
@@ -28,22 +29,27 @@ export default function BlogPost({ data }) {
     <>
       <HelmetComponent
         title={post.frontmatter.title}
-        description={post.frontmatter.description}
+        description={`${post.frontmatter.description} — ${post.excerpt}`}
         image={getSrc(post.frontmatter.thumbnail)}
       />
       <Navbar />
       <BlogPostWrapper>
         <BlogPostContainer>
-          <h1>{post.frontmatter.title}</h1>
-          <p>{post.frontmatter.description}</p>
-          <small>
-            {new Date(post.frontmatter.date).toLocaleString("default", {
-              month: "long",
-              day: "numeric",
-              year: "numeric",
-              timeZone: "UTC",
-            })}
-          </small>
+          <BlogPostHeader>
+            <h1>{post.frontmatter.title}</h1>
+            <p>{post.frontmatter.description}</p>
+            <small>
+              {new Date(post.frontmatter.date).toLocaleString("default", {
+                month: "long",
+                day: "numeric",
+                year: "numeric",
+                timeZone: "UTC",
+              })}
+            </small>
+          </BlogPostHeader>
+          <GatsbyImage
+            image={post.frontmatter.thumbnail.childImageSharp.gatsbyImageData}
+          />
           <BlogPostContent dangerouslySetInnerHTML={{ __html: post.html }} />
           {(next || previous) && (
             <BlogPostNavigationWrapper>
@@ -82,10 +88,11 @@ export const query = graphql`
         date
         thumbnail {
           childImageSharp {
-            gatsbyImageData(formats: [AUTO, WEBP])
+            gatsbyImageData(formats: [AUTO, WEBP], layout: CONSTRAINED)
           }
         }
       }
+      excerpt(pruneLength: 160)
     }
     blog: allMarkdownRemark(sort: { fields: frontmatter___date, order: ASC }) {
       posts: nodes {
