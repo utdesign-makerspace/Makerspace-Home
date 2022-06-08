@@ -20,6 +20,11 @@ export const BlogPostContent = styled.section`
   margin-top: 20px;
   border-top: 2px solid #eee;
 
+  a {
+    color: #c1393d;
+    text-decoration: none;
+  }
+
   *:first-child {
     margin-top: 0px;
   }
