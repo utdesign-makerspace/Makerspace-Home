@@ -1,6 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
-import { GatsbyImage } from "gatsby-plugin-image";
+import { GatsbyImage, getSrc } from "gatsby-plugin-image";
 import Navbar from "../../components/navbar";
 import HelmetComponent from "../../components/helmet";
 import Footer from "../../components/footer";
@@ -30,6 +30,7 @@ export default function BlogPost({ data }) {
       <HelmetComponent
         title={post.frontmatter.title}
         description={`${post.frontmatter.description} — ${post.excerpt}`}
+        image={getSrc(post.frontmatter.thumbnail)}
       />
       <Navbar />
       <BlogPostWrapper>
@@ -87,7 +88,7 @@ export const query = graphql`
         date
         thumbnail {
           childImageSharp {
-            gatsbyImageData(layout: CONSTRAINED)
+            gatsbyImageData(formats: [AUTO, WEBP], layout: CONSTRAINED)
           }
         }
       }
