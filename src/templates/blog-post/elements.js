@@ -78,3 +78,7 @@ export const BlogPostNavigationWrapper = styled.ul`
   margin-top: 50px;
   max-width: 100%;
 `;
+
+export const BlogPostHeader = styled.div`
+  padding-bottom: 10px;
+`;

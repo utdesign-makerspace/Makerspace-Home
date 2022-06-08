@@ -1,5 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
+import { GatsbyImage } from "gatsby-plugin-image";
 import Navbar from "../../components/navbar";
 import HelmetComponent from "../../components/helmet";
 import Footer from "../../components/footer";
@@ -9,6 +10,7 @@ import {
   BlogPostWrapper,
   BlogPostNavigation,
   BlogPostNavigationWrapper,
+  BlogPostHeader,
 } from "./elements";
 
 export default function BlogPost({ data }) {
@@ -32,16 +34,21 @@ export default function BlogPost({ data }) {
       <Navbar />
       <BlogPostWrapper>
         <BlogPostContainer>
-          <h1>{post.frontmatter.title}</h1>
-          <p>{post.frontmatter.description}</p>
-          <small>
-            {new Date(post.frontmatter.date).toLocaleString("default", {
-              month: "long",
-              day: "numeric",
-              year: "numeric",
-              timeZone: "UTC",
-            })}
-          </small>
+          <BlogPostHeader>
+            <h1>{post.frontmatter.title}</h1>
+            <p>{post.frontmatter.description}</p>
+            <small>
+              {new Date(post.frontmatter.date).toLocaleString("default", {
+                month: "long",
+                day: "numeric",
+                year: "numeric",
+                timeZone: "UTC",
+              })}
+            </small>
+          </BlogPostHeader>
+          <GatsbyImage
+            image={post.frontmatter.thumbnail.childImageSharp.gatsbyImageData}
+          />
           <BlogPostContent dangerouslySetInnerHTML={{ __html: post.html }} />
           {(next || previous) && (
             <BlogPostNavigationWrapper>
@@ -78,6 +85,11 @@ export const query = graphql`
         title
         description
         date
+        thumbnail {
+          childImageSharp {
+            gatsbyImageData(layout: CONSTRAINED)
+          }
+        }
       }
       excerpt(pruneLength: 160)
     }
