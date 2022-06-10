@@ -16,7 +16,7 @@ export const FooterWrapper = styled.div`
 `;
 
 export const FooterLogo = styled.img`
-  max-height: 32px;
+  height: 32px;
   margin-bottom: 8px;
 
   @media screen and (max-width: 768px) {

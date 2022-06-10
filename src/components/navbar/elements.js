@@ -43,7 +43,7 @@ export const NavLogo = styled(Link)`
 `;
 
 export const NavLogoImg = styled.img`
-  max-height: 32px;
+  height: 32px;
 
   @media screen and (max-width: 768px) {
     height: 24px;

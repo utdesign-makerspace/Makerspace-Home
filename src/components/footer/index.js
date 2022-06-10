@@ -6,7 +6,7 @@ import {
   FooterCopyright,
   FooterWrapper,
 } from "./elements";
-import MakerspaceLogo from "../../images/navbarlogo.png";
+import MakerspaceLogo from "../../images/navbarlogo.svg";
 
 const Footer = () => {
   return (
