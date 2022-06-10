@@ -2,7 +2,7 @@ import React from "react";
 import { StaticQuery, graphql } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 
-const HeroImage = (props) => (
+const SponsorImage = (props) => (
   <StaticQuery
     query={graphql`
       query {
@@ -12,11 +12,7 @@ const HeroImage = (props) => (
               relativePath
               name
               childImageSharp {
-                gatsbyImageData(
-                  quality: 100
-                  layout: CONSTRAINED
-                  placeholder: NONE
-                )
+                gatsbyImageData(placeholder: NONE)
               }
             }
           }
@@ -34,13 +30,13 @@ const HeroImage = (props) => (
       return (
         <GatsbyImage
           image={image.node.childImageSharp.gatsbyImageData}
+          alt={props.name}
+          title={props.name}
           layout="fixed"
-          objectFit="cover"
-          width={1920}
+          objectFit="contain"
           style={{
-            width: "100%",
-            height: "100%",
-            position: "absolute",
+            width: "96px",
+            height: "96px",
           }}
           formats={["auto", "webp"]}
         />
@@ -49,4 +45,4 @@ const HeroImage = (props) => (
   />
 );
 
-export default HeroImage;
+export default SponsorImage;

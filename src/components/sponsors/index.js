@@ -10,67 +10,57 @@ import {
   SponsorsText,
   SponsorLink,
   SponsorLinksContainer,
-  SponsorImg,
   PartnersColumn,
   SponsorsColumn,
 } from "./elements";
-
-import AIAAImg from "../../images/sponsors/aiaa.png";
-import DBFImg from "../../images/sponsors/dbf.png";
-import IEEEImg from "../../images/sponsors/ieee.png";
-import OpenImg from "../../images/sponsors/openutd.png";
-import PRIDEImg from "../../images/sponsors/pride.png";
-import RoboSubImg from "../../images/sponsors/robosub.png";
-import SGDAImg from "../../images/sponsors/sgda.png";
-import UTDesignImg from "../../images/sponsors/utdesign.svg";
-import UTDallasDiscordImg from "../../images/sponsors/utdallasdiscord.png";
+import SponsorImage from "../sponsorimage";
 
 const sponsors = [
   {
     name: "UTDesign Capstone",
-    img: UTDesignImg,
+    img: "sponsors/utdesign.png",
     link: "https://utdesign.utdallas.edu/",
   },
 ];
 const partners = [
   {
     name: "American Institute of Aeronautics and Astronautics",
-    img: AIAAImg,
+    img: "sponsors/aiaa.png",
     link: "https://www.instagram.com/aiaa_utd/",
   },
   {
     name: "Design Build Fly",
-    img: DBFImg,
+    img: "sponsors/dbf.png",
     link: "https://www.instagram.com/aiaa_utd/",
   },
   {
     name: "Institute of Electrical and Electronics Engineers",
-    img: IEEEImg,
+    img: "sponsors/ieee.png",
     link: "https://ieeeutd.org/",
   },
   {
     name: "OpenUTD",
-    img: OpenImg,
+    img: "sponsors/openutd.png",
     link: "https://openutd.club/",
   },
   {
     name: "PRIDE @ UTD",
-    img: PRIDEImg,
+    img: "sponsors/pride.png",
     link: "https://www.prideutdallas.net/",
   },
   {
     name: "RoboSub",
-    img: RoboSubImg,
+    img: "sponsors/robosub.png",
     link: "https://discord.gg/5sVVqaRKpc",
   },
   {
     name: "Student Game Developer Association",
-    img: SGDAImg,
+    img: "sponsors/sgda.png",
     link: "https://utdsgda.club/",
   },
   {
     name: "UT Dallas Discord",
-    img: UTDallasDiscordImg,
+    img: "sponsors/utdallasdiscord.png",
     link: "https://discord.gg/utdallas",
   },
 ];
@@ -107,11 +97,7 @@ const Sponsors = () => {
             <SponsorLinksContainer>
               {sponsors.map((item) => (
                 <SponsorLink href={item.link} target="_blank">
-                  <SponsorImg
-                    src={item.img}
-                    alt={item.name}
-                    title={item.name}
-                  />
+                  <SponsorImage filename={item.img} name={item.name} />
                 </SponsorLink>
               ))}
             </SponsorLinksContainer>
@@ -127,11 +113,7 @@ const Sponsors = () => {
             <SponsorLinksContainer>
               {partners.map((item) => (
                 <SponsorLink href={item.link} target="_blank">
-                  <SponsorImg
-                    src={item.img}
-                    alt={item.name}
-                    title={item.name}
-                  />
+                  <SponsorImage filename={item.img} name={item.name} />
                 </SponsorLink>
               ))}
             </SponsorLinksContainer>

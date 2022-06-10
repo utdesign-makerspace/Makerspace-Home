@@ -7,13 +7,6 @@ import {
   HeroCopyright,
 } from "./elements";
 
-// import AIAABg from "hero/aiaa.png";
-// import ArcadeBg from "hero/arcade.png";
-// import CosplayBg from "hero/cosplay.png";
-// import PrintersBg from "hero/printers.png";
-// import SGDA1Bg from "hero/sgda1.png";
-// import SGDA2Bg from "hero/sgda2.png";
-
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectFade, Pagination, Navigation } from "swiper";
 import "swiper/css";
@@ -23,29 +16,29 @@ import "swiper/css/navigation";
 import HeroImage from "../heroimage";
 
 const Backgrounds = [
-  { subtitle: "3D printing fans", image: "printers.jpg" },
+  { subtitle: "3D printing fans", image: "hero/printers.png" },
   {
     subtitle: "cosplayers",
-    image: "cosplay.jpg",
+    image: "hero/cosplay.png",
     copyright: "Thomas Cortez (Biotom27)",
     year: "2022",
   },
   {
     subtitle: "engineers",
-    image: "aiaa.jpg",
+    image: "hero/aiaa.png",
     copyright: "Erik Nguyen",
     year: "2022",
   },
-  { subtitle: "game developers", image: "arcade.jpg" },
+  { subtitle: "game developers", image: "hero/arcade.png" },
   {
     subtitle: "programmers",
-    image: "sgda2.jpg",
+    image: "hero/sgda2.png",
     copyright: "Student Game Developer Association",
     year: "2022",
   },
   {
     subtitle: "workshop attendees",
-    image: "sgda1.jpg",
+    image: "hero/sgda1.png",
     copyright: "Student Game Developer Association",
     year: "2022",
   },

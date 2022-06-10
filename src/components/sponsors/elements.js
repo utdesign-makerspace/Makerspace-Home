@@ -69,9 +69,3 @@ export const SponsorLink = styled.a`
   align-items: center;
   justify-content: center;
 `;
-
-export const SponsorImg = styled.img`
-  height: 96px;
-  width: 96px;
-  object-fit: contain;
-`;
