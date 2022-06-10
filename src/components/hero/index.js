@@ -1,19 +1,11 @@
 import React from "react";
 import {
   HeroContainer,
-  HeroBg,
   HeroContent,
   HeroH1,
   HeroP,
   HeroCopyright,
 } from "./elements";
-
-import AIAABg from "../../images/hero/aiaa.jpg";
-import ArcadeBg from "../../images/hero/arcade.jpg";
-import CosplayBg from "../../images/hero/cosplay.jpg";
-import PrintersBg from "../../images/hero/printers.jpg";
-import SGDA1Bg from "../../images/hero/sgda1.jpg";
-import SGDA2Bg from "../../images/hero/sgda2.jpg";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectFade, Pagination, Navigation } from "swiper";
@@ -21,31 +13,32 @@ import "swiper/css";
 import "swiper/css/effect-fade";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import HeroImage from "../heroimage";
 
 const Backgrounds = [
-  { subtitle: "3D printing fans", image: PrintersBg },
+  { subtitle: "3D printing fans", image: "hero/printers.png" },
   {
     subtitle: "cosplayers",
-    image: CosplayBg,
+    image: "hero/cosplay.png",
     copyright: "Thomas Cortez (Biotom27)",
     year: "2022",
   },
   {
     subtitle: "engineers",
-    image: AIAABg,
+    image: "hero/aiaa.png",
     copyright: "Erik Nguyen",
     year: "2022",
   },
-  { subtitle: "game developers", image: ArcadeBg },
+  { subtitle: "game developers", image: "hero/arcade.png" },
   {
     subtitle: "programmers",
-    image: SGDA2Bg,
+    image: "hero/sgda2.png",
     copyright: "Student Game Developer Association",
     year: "2022",
   },
   {
     subtitle: "workshop attendees",
-    image: SGDA1Bg,
+    image: "hero/sgda1.png",
     copyright: "Student Game Developer Association",
     year: "2022",
   },
@@ -76,7 +69,7 @@ const Hero = () => {
       {Backgrounds.map((bg) => (
         <SwiperSlide>
           <HeroContainer>
-            <HeroBg src={bg.image} />
+            <HeroImage filename={bg.image} />
             <HeroContent>
               <HeroH1>
                 We are a community of

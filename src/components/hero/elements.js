@@ -18,14 +18,6 @@ export const HeroContainer = styled.div`
   }
 `;
 
-export const HeroBg = styled.img`
-  position: absolute;
-  object-fit: cover;
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-`;
-
 export const HeroContent = styled.div`
   z-index: 3;
   max-width: 800px;

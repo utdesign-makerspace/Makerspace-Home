@@ -13,7 +13,7 @@ import {
   NavLinkG,
   NavLogoImg,
 } from "./elements";
-import MakerspaceLogo from "../../images/navbarlogo.png";
+import MakerspaceLogo from "../../images/navbarlogo.svg";
 import { animateScroll as scroll } from "react-scroll";
 
 const goHome = () => {
