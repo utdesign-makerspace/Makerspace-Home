@@ -23,6 +23,7 @@ export const BlogLink = styled(Link)`
   text-decoration: none;
   box-shadow: 0 0.5em 1em -0.125em rgb(0 0 0 / 10%), 0 0px 0 1px rgb(0 0 0 / 2%);
   transition: box-shadow 0.2s;
+  border-radius: 8px;
 
   :hover {
     box-shadow: 0 0.5em 1em -0.125em rgb(0 0 0 / 20%),
@@ -47,6 +48,7 @@ export const BlogLinkThumbnail = styled(GatsbyImage)`
   width: 400px;
   height: 150px;
   border-bottom: 2px solid #f0f0f0;
+  border-radius: 8px 8px 0 0;
   /* 520 */
   @media screen and (max-width: 520px) {
     width: 100%;

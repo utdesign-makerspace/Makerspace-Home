@@ -38,6 +38,9 @@ const Navbar = ({ toggle, transparent }) => {
             <NavLinkG to="/calendar">Calendar</NavLinkG>
           </NavItem>
           <NavItem>
+            <NavLinkG to="/merch">Merch</NavLinkG>
+          </NavItem>
+          <NavItem>
             <NavLinkA href="https://learn.utd.ms/">Training</NavLinkA>
           </NavItem>
           <NavItem>
