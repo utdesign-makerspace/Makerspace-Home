@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 export const MerchWrapper = styled.div`
   display: flex;
@@ -22,6 +23,7 @@ export const MerchButton = styled.div`
   box-shadow: 0 0.5em 1em -0.125em rgb(0 0 0 / 10%), 0 0px 0 1px rgb(0 0 0 / 2%);
   transition: box-shadow 0.2s;
   border-radius: 8px;
+  cursor: pointer;
 
   :hover {
     box-shadow: 0 0.5em 1em -0.125em rgb(0 0 0 / 20%),
@@ -35,4 +37,9 @@ export const MerchButton = styled.div`
 
 export const MerchText = styled.div`
   padding: 8px 8px;
+`;
+
+export const MerchModalAnimation = styled(motion.div)`
+  position: relative;
+  z-index: 5;
 `;

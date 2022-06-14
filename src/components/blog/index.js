@@ -24,7 +24,7 @@ const Blog = ({ data }) => {
                   }
                 />
                 <BlogLinkText key={post.id}>
-                  <h2>{post.frontmatter.title}</h2>
+                  <h3>{post.frontmatter.title}</h3>
                   <p>{post.frontmatter.description}</p>
                   <small>
                     {moment(post.frontmatter.date).local().fromNow()}

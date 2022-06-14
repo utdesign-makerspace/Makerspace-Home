@@ -6,7 +6,7 @@ import Merch from "../components/merch";
 import Footer from "../components/footer";
 import "./style.css";
 
-const MerchPage = ({ data }) => {
+const MerchPage = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => {
