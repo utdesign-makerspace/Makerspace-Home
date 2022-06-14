@@ -50,11 +50,13 @@ export const MerchCloseModal = styled.div`
 export const MerchTextContainer = styled.div`
   display: flex;
   flex-direction: column;
-  max-width: 460px;
+  width: 460px;
   padding-left: 40px;
 
   @media screen and (max-width: 900px) {
     padding-left: 0px;
     padding-top: 20px;
+    max-width: 300px;
+    width: auto;
   }
 `;

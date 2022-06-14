@@ -10,7 +10,15 @@ import { FaDiscord, FaShoppingCart, FaTimes } from "react-icons/fa";
 import MerchModalImage from "../merchmodalimage";
 import { ButtonLink, ButtonIconHolder } from "../button";
 
-const MerchModal = ({ hideFunction }) => {
+const MerchModal = ({
+  hideFunction,
+  name,
+  description,
+  price,
+  thumbnail,
+  link,
+  type,
+}) => {
   return (
     <>
       <MerchModalBackground onClick={hideFunction} />
@@ -19,36 +27,33 @@ const MerchModal = ({ hideFunction }) => {
           <MerchCloseModal onClick={hideFunction}>
             <FaTimes size={"24px"} />
           </MerchCloseModal>
-          <MerchModalImage name="Pride Sticker" filename="merch/pride.png" />
+          <MerchModalImage name={name} filename={thumbnail} />
           <MerchTextContainer>
-            <h1>Pride Sticker</h1>
+            <h1>{name}</h1>
             <p>
-              Starting at <b>$1.00</b>
+              Starting at <b>{price}</b>
             </p>
             <br />
-            <p>
-              Celebrate your pride with a sticker showcasing the Makerspace
-              letterform logo and a pride flag of your choice. Available in
-              rainbow, asexual, bisexual, lesbian, non-binary, pansexual, and
-              transgender pride.
-            </p>
+            <p>{description}</p>
             <br />
-            <small>
-              Stickers are produced at UTDesign Makerspace and not available for
-              shipping. Stickers are 2" but can be larger for a small fee.
-              Please contact an officer to commission a sticker order.
-            </small>
+            <small>{type.terms}</small>
             <br />
-            <ButtonLink href="https://discord.gg/VQzQMnnWnx" target="_blank">
-              <ButtonIconHolder>
-                <FaDiscord />
-              </ButtonIconHolder>
-              Contact an Officer
-              {/* <ButtonIconHolder>
-                <FaShoppingCart />
-              </ButtonIconHolder>
-              Purchase */}
-            </ButtonLink>
+            {!link && (
+              <ButtonLink href="https://discord.gg/VQzQMnnWnx" target="_blank">
+                <ButtonIconHolder>
+                  <FaDiscord />
+                </ButtonIconHolder>
+                Contact an Officer
+              </ButtonLink>
+            )}
+            {link && (
+              <ButtonLink href={link} target="_blank">
+                <ButtonIconHolder>
+                  <FaShoppingCart />
+                </ButtonIconHolder>
+                Purchase
+              </ButtonLink>
+            )}
           </MerchTextContainer>
         </MerchModalContainer>
       </MerchModalWrapper>
