@@ -13,10 +13,6 @@ export const Nav = styled.nav`
   font-size: 1rem;
   top: 0;
   z-index: 10;
-
-  @media screen and (max-width: 960px) {
-    transition: 0.8s all ease;
-  }
 `;
 
 export const NavbarContainer = styled.div`
@@ -99,10 +95,10 @@ export const NavLinkS = styled(LinkS)`
   text-decoration: none;
   height: 100%;
   cursor: pointer;
+  transition: 0.2s;
 
   &:hover {
     color: #f2d1c9;
-    transition: 0.1s ease-in-out;
   }
 `;
 
@@ -113,10 +109,10 @@ export const NavLinkG = styled(Link)`
   text-decoration: none;
   height: 100%;
   cursor: pointer;
+  transition: 0.2s;
 
   &:hover {
     color: #f2d1c9;
-    transition: 0.1s ease-in-out;
   }
 `;
 
@@ -127,10 +123,10 @@ export const NavLinkA = styled.a`
   text-decoration: none;
   height: 100%;
   cursor: pointer;
+  transition: 0.2s;
 
   &:hover {
     color: #f2d1c9;
-    transition: 0.1s ease-in-out;
   }
 `;
 
@@ -142,6 +138,7 @@ export const NavSocials = styled.a`
   padding: 0 10px;
   height: 100%;
   cursor: pointer;
+  transition: 0.2s;
 
   :first-of-type {
     padding-left: 0;
@@ -153,6 +150,5 @@ export const NavSocials = styled.a`
 
   &:hover {
     color: #f2d1c9;
-    transition: 0.1s ease-in-out;
   }
 `;

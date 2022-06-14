@@ -13,12 +13,13 @@ export const ButtonLink = styled.a`
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all 0.1s ease-in-out;
+  transition: 0.2s;
   text-decoration: none;
 
   &:hover {
-    transition: all 0.1s ease-in-out;
-    background: #8f2b2e;
+    background: #cf484d;
+    box-shadow: 0 0.5em 1em -0.125em rgb(0 0 0 / 20%),
+      0 0px 0 1px rgb(0 0 0 / 2%);
   }
 `;
 

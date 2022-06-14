@@ -21,7 +21,13 @@ export const BlogLink = styled(Link)`
   margin: 10px 10px;
   width: 400px;
   text-decoration: none;
-  border: 2px solid #eee;
+  box-shadow: 0 0.5em 1em -0.125em rgb(0 0 0 / 10%), 0 0px 0 1px rgb(0 0 0 / 2%);
+  transition: box-shadow 0.2s;
+
+  :hover {
+    box-shadow: 0 0.5em 1em -0.125em rgb(0 0 0 / 20%),
+      0 0px 0 1px rgb(0 0 0 / 2%);
+  }
 
   * {
     color: #000;
@@ -38,9 +44,9 @@ export const BlogLinkText = styled.div`
 
 export const BlogLinkThumbnail = styled(GatsbyImage)`
   object-fit: cover;
-  width: 396px;
+  width: 400px;
   height: 150px;
-  border-bottom: 2px solid #eee;
+  border-bottom: 2px solid #f0f0f0;
   /* 520 */
   @media screen and (max-width: 520px) {
     width: 100%;
