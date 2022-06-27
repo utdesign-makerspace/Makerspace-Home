@@ -10,7 +10,7 @@ As a result of major changes we need to make to our user database, we have decid
 # Transition Steps
 We understand that most of our members aren't interested in hearing all of the details, so we'll cut right to the chase. In our [Discord server](https://discord.gg/VQzQMnnWnx), we created a thread in our #announcements channel. Members who sign up with [our new registration portal](https://register.utd.ms) can send their NetID in this thread to have all training they completed reassigned to their new account.
 
-Because this is a manual process that will take our officers a lot of time, **we are only offering this service until Friday, June 8th, 2022** and possibly for a short period at the beginning of the Fall 2022 semester. Anyone who does not complete the transition before this time will have to complete all training again.
+Because this is a manual process that will take our officers a lot of time, **we are only offering this service until Friday, July 8th, 2022** and possibly for a short period at the beginning of the Fall 2022 semester. Anyone who does not complete the transition before this time will have to complete all training again.
 
 # Summary
 A few months ago, our IT committee decided that our current user database provider was not meeting our expectations as well as we would like. Certain features like linking Discord accounts, restricting computers to trained members, and not autocompleting with email addresses at sign-up were difficult for us to use with our old provider.
