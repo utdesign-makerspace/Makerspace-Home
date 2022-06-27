@@ -1,7 +1,7 @@
 ---
 title: User Database Update
 description: How to register for a new account
-date: 2022-06-27 08:00
+date: 2022-06-27 02:00
 thumbnail: ../images/blog/generic.png
 ---
 
