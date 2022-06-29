@@ -2,7 +2,7 @@
 title: Welcome to Our New Website
 description: Detailing changes to our website
 date: 2022-05-26 14:50
-thumbnail: ../images/blog/hero.png
+thumbnail: /blogimg/hero.png
 ---
 
 <!---
@@ -28,7 +28,7 @@ One section that was a big focus for us was the homepage. This is our first impr
 - The FAQ section has been removed as we prefer members refer to the wiki for the most up to date information.
 - A list of sponsors and partners has been added.
 
-![Our new frontpage](../images/blog/new-website-1.png)
+![Our new frontpage](/blogimg/new-website-1.png)
 
 # New calendar
 
@@ -39,7 +39,7 @@ Our calendar has also been adjusted to have a modern look. We attempted to impro
 - Buttons in event modals are now icons. This should save space and make the modal look modern compared to its previous design.
 - All events now have download and Google Calendar buttons, allowing members to easily add events in the Makerspace to their own calendars.
 
-![Our new calendar and modal](../images/blog/new-website-2.png)
+![Our new calendar and modal](/blogimg/new-website-2.png)
 
 # More to come
 

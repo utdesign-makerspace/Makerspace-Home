@@ -2,7 +2,7 @@
 title: New Stations Available
 description: Discussing virtual reality and resin printing
 date: 2022-06-08 18:00
-thumbnail: ../images/blog/vr.jpg
+thumbnail: /blogimg//vr.jpg
 ---
 
 We've been working hard over the summer to make new stations available to our members. In this blog post, we will discuss the two new stations that will soon be available to our members, including ways they can be used and how to gain access to them.
