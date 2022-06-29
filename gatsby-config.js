@@ -21,22 +21,14 @@ module.exports = {
     },
     "gatsby-plugin-mdx",
     "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp",
     {
-      resolve: `gatsby-transformer-remark`,
+      resolve: `gatsby-source-filesystem`,
       options: {
-        plugins: [
-          {
-            resolve: `gatsby-remark-images`,
-            options: {
-              maxWidth: 500,
-              showCaptions: true,
-              linkImagesToOriginal: false,
-            },
-          },
-        ],
+        path: `${__dirname}/static/blogimg/`,
+        name: "blogimg",
       },
     },
-    "gatsby-transformer-sharp",
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -61,6 +53,27 @@ module.exports = {
       },
       __key: "blog",
     },
-    "gatsby-plugin-netlify-cms",
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          `gatsby-remark-relative-images`,
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 500,
+              showCaptions: true,
+              linkImagesToOriginal: false,
+            },
+          },
+        ],
+      },
+    },
+    {
+      resolve: "gatsby-plugin-netlify-cms",
+      options: {
+        modulePath: `${__dirname}/src/cms/netlify.js`,
+      },
+    },
   ],
 };
