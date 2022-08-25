@@ -14,15 +14,11 @@ If you have a question that isn't answered below, please reach out to EMERALD#08
 
 ### Where is UTDesign Makerspace?
 
-Our address is 3000 Waterview Parkway, Richardson, TX. We are located on the Synergy Park North (SPN) building's second floor. If you enter from the main entrance, you can find us by going up the right-hand stairs and through the glass doors.
+Our address is 3000 Waterview Parkway, Richardson, TX. We are located on the Synergy Park North (SPN) building's second floor. If you enter from the main entrance, you can find us by going up the right-hand stairs and through the glass doors. Our room number is SPN 2.220.
 
 ### Which student organizations will be presenting?
 
 UTDesign Makerspace will be presenting for most of the kick-off with AIAA, IEEE, OpenUTD, and SGDA making quick appearances. All student organizations will give information on how to get involved with their group.
-
-### Will masks, social distancing, or other safety measures be enforced?
-
-Following the current CDC guidelines, we will not be enforcing any mask-wearing or social distancing. However, we recommend wearing a high-quality mask or respirator (ex. N95) if you are at high risk of receiving or transmitting COVID-19. The entire event will be broadcast over [Discord](https://utd.ms/discord), so feel free to use this option if it makes you more comfortable.
 
 ### I can't attend in person. Will I be missing anything?
 
