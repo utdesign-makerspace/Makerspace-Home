@@ -1,5 +1,5 @@
 import React from "react";
-import { FaBars, FaDiscord, FaInstagram } from "react-icons/fa";
+import { FaBars, FaDiscord, FaInstagram, FaYoutube } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import {
   Nav,
@@ -38,6 +38,9 @@ const Navbar = ({ toggle, transparent }) => {
             <NavLinkG to="/calendar">Calendar</NavLinkG>
           </NavItem>
           <NavItem>
+            <NavLinkG to="/store">Store</NavLinkG>
+          </NavItem>
+          <NavItem>
             <NavLinkA href="https://learn.utd.ms/">Training</NavLinkA>
           </NavItem>
           <NavItem>
@@ -52,6 +55,12 @@ const Navbar = ({ toggle, transparent }) => {
               target="_blank"
             >
               <FaInstagram />
+            </NavSocials>
+            <NavSocials
+              href="https://www.youtube.com/channel/UC3G92uIpEy31awnKisxhGWg"
+              target="_blank"
+            >
+              <FaYoutube />
             </NavSocials>
             <NavSocials href="mailto:utdmakerspace@gmail.com" target="_blank">
               <MdEmail />

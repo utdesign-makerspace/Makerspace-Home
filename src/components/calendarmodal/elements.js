@@ -28,6 +28,7 @@ export const CalModalContainer = styled.div`
   max-width: 800px;
   position: fixed;
   pointer-events: all;
+  box-shadow: 0 0.5em 1em -0.125em rgb(0 0 0 / 10%), 0 0px 0 1px rgb(0 0 0 / 2%);
 `;
 
 export const CalLinkWrapper = styled.div`
