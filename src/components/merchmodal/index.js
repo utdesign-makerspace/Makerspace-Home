@@ -39,7 +39,7 @@ const MerchModal = ({
             <small>{type.terms}</small>
             <br />
             {!link && (
-              <ButtonLink href="https://discord.gg/VQzQMnnWnx" target="_blank">
+              <ButtonLink href="https://utd.ms/discord" target="_blank">
                 <ButtonIconHolder>
                   <FaDiscord />
                 </ButtonIconHolder>

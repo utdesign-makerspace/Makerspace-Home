@@ -43,6 +43,14 @@ const MerchItems = [
     thumbnail: "merch/pridecollection.png",
     type: MerchTypes.Sticker,
   },
+  {
+    name: "Custom Sticker",
+    description:
+      "Have a custom sticker made for you! We can make stickers of any size and shape. Please note that we are offering this as a paid service out of convenience. You are welcome to print your own stickers at home and cut them at the Makerspace.",
+    price: 1,
+    thumbnail: "merch/generalsticker.png",
+    type: MerchTypes.Sticker,
+  },
 ];
 
 class Merch extends React.Component {
