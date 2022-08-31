@@ -10,7 +10,7 @@ import {
   SidebarSocials,
   Social,
 } from "./elements";
-import { FaDiscord, FaInstagram } from "react-icons/fa";
+import { FaDiscord, FaInstagram, FaYoutube } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
 const Sidebar = ({ isOpen, toggle }) => {
@@ -35,6 +35,12 @@ const Sidebar = ({ isOpen, toggle }) => {
               target="_blank"
             >
               <FaInstagram />
+            </Social>
+            <Social
+              href="https://www.youtube.com/channel/UC3G92uIpEy31awnKisxhGWg"
+              target="_blank"
+            >
+              <FaYoutube />
             </Social>
             <Social href="mailto:utdmakerspace@gmail.com" target="_blank">
               <MdEmail />

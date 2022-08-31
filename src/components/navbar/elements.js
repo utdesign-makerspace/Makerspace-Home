@@ -86,6 +86,13 @@ export const NavItem = styled.li`
   :last-of-type {
     padding-right: 0;
   }
+
+  @media screen and (max-width: 900px) {
+    padding: 0.5rem;
+  }
+  @media screen and (max-width: 820px) {
+    padding: 0.3rem;
+  }
 `;
 
 export const NavLinkS = styled(LinkS)`
