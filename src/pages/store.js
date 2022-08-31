@@ -15,7 +15,7 @@ const MerchPage = () => {
 
   return (
     <>
-      <HelmetComponent title="Merch" />
+      <HelmetComponent title="Store" />
       <Navbar toggle={toggle} />
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Merch />

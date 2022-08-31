@@ -23,7 +23,7 @@ const Sidebar = ({ isOpen, toggle }) => {
         <SidebarMenu>
           <SidebarLinkG to="/blog">Blog</SidebarLinkG>
           <SidebarLinkG to="/calendar">Calendar</SidebarLinkG>
-          <SidebarLinkG to="/merch">Merch</SidebarLinkG>
+          <SidebarLinkG to="/store">Store</SidebarLinkG>
           <SidebarLinkA href="https://learn.utd.ms/">Training</SidebarLinkA>
           <SidebarLinkA href="https://wiki.utd.ms/">Wiki</SidebarLinkA>
           <SidebarSocials>
