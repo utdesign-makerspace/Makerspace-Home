@@ -8,16 +8,50 @@ import {
   MerchButton,
   MerchText,
   MerchModalAnimation,
+  MerchHeader,
+  MerchDescription,
 } from "./elements";
 
 const MerchTypes = {
+  Apparel: {
+    title: "Apparel",
+    description: "We greatly appreciate your service as a walking billboard.",
+    terms:
+      'Stickers are produced at UTDesign Makerspace and not available for shipping. Stickers are 2" but can be larger for a small fee. Prices listed reflect a cash discount. Please contact an officer to buy stickers.',
+  },
+  Keychain: {
+    title: "Keychains",
+    description:
+      "A unique conversation starter. Or a reminder of that one project you're putting off.",
+    terms:
+      "Keychains are produced at UTDesign Makerspace and not available for shipping. All keychains are 3D printed and may have small imperfections. Please contact an officer to buy keychains.",
+  },
   Sticker: {
+    title: "Stickers",
+    description:
+      "Slap it on your favorite tech or that one light pole by Hoblitzelle Hall.",
     terms:
       'Stickers are produced at UTDesign Makerspace and not available for shipping. Stickers are 2" but can be larger for a small fee. Prices listed reflect a cash discount. Please contact an officer to buy stickers.',
   },
 };
 
 const MerchItems = [
+  {
+    name: "M Keychain",
+    description:
+      "Represent UTDesign Makerspace with an embossed keychain of our letterform logo.",
+    price: 3,
+    thumbnail: "merch/filamentkeychain.png",
+    type: MerchTypes.Keychain,
+  },
+  {
+    name: "Filament Spool Keychain",
+    description:
+      "Show off your 3D printing mania with this keychain designed to look like a filament spool. Other colors may be available, so make sure to ask an officer!",
+    price: 3,
+    thumbnail: "merch/filamentkeychain.png",
+    type: MerchTypes.Keychain,
+  },
   {
     name: "M Sticker",
     description:
@@ -98,12 +132,46 @@ class Merch extends React.Component {
           )}
         </AnimatePresence>
         <MerchWrapper>
+          <MerchSection
+            type={MerchTypes.Apparel}
+            merchClick={this.merchClick}
+          />
+          <MerchSection
+            type={MerchTypes.Keychain}
+            merchClick={this.merchClick}
+          />
+          <MerchSection
+            type={MerchTypes.Sticker}
+            merchClick={this.merchClick}
+          />
+        </MerchWrapper>
+      </>
+    );
+  }
+}
+
+class MerchSection extends React.Component {
+  itemArr = MerchItems.filter((item) => item.type === this.props.type);
+
+  render() {
+    return (
+      <div
+        style={{
+          marginLeft: "40px",
+          marginRight: "40px",
+          marginTop: "20px",
+          marginBottom: "20px",
+        }}
+      >
+        <MerchHeader>{this.props.type.title}</MerchHeader>
+        <MerchDescription>{this.props.type.description}</MerchDescription>
+        {this.itemArr.length > 0 ? (
           <MerchContainer>
-            {MerchItems.map((item) => (
+            {this.itemArr.map((item) => (
               <>
                 <MerchButton
                   onClick={() =>
-                    this.merchClick(
+                    this.props.merchClick(
                       item.name,
                       item.description,
                       item.thumbnail,
@@ -133,8 +201,12 @@ class Merch extends React.Component {
               </>
             ))}
           </MerchContainer>
-        </MerchWrapper>
-      </>
+        ) : (
+          <p style={{ textAlign: "center", color: "#aaa" }}>
+            No items available. Check back later!
+          </p>
+        )}
+      </div>
     );
   }
 }
