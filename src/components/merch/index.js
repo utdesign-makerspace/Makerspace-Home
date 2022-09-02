@@ -41,7 +41,7 @@ const MerchItems = [
     description:
       "Represent UTDesign Makerspace with an embossed keychain of our letterform logo.",
     price: 3,
-    thumbnail: "merch/filamentkeychain.png",
+    thumbnail: "merch/mkeychain.png",
     type: MerchTypes.Keychain,
   },
   {
