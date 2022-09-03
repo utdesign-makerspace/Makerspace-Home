@@ -3,8 +3,11 @@ import { motion } from "framer-motion";
 
 export const MerchWrapper = styled.div`
   display: flex;
-  justify-content: center;
+  align-items: center;
   width: 100%;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 20px;
 `;
 
 export const MerchContainer = styled.div`
@@ -13,7 +16,6 @@ export const MerchContainer = styled.div`
   justify-content: center;
   flex-wrap: wrap;
   max-width: 1280px;
-  margin: 40px 40px;
 `;
 
 export const MerchButton = styled.div`
@@ -42,4 +44,18 @@ export const MerchText = styled.div`
 export const MerchModalAnimation = styled(motion.div)`
   position: relative;
   z-index: 5;
+`;
+
+export const MerchHeader = styled.h1`
+  width: 100%;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 6px;
+`;
+
+export const MerchDescription = styled.p`
+  width: 100%;
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 10px;
 `;

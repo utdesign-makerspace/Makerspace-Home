@@ -38,6 +38,7 @@ const MerchModalImage = (props) => (
             maxWidth: "300px",
             maxHeight: "300px",
             borderRadius: "8px",
+            overflow: "visible",
           }}
           formats={["auto", "webp"]}
           backgroundColor={"#f9f9f9"}

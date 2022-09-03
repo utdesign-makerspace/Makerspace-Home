@@ -28,3 +28,19 @@ export const ButtonIconHolder = styled.div`
   display: flex;
   align-items: center;
 `;
+
+export const DisabledButton = styled.div`
+  border-radius: 50px;
+  background: #c1393d;
+  white-space: nowrap;
+  padding: 12px 30px;
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  opacity: 0.5;
+`;
