@@ -18,7 +18,7 @@ const MerchTypes = {
     title: "Apparel",
     description: "We greatly appreciate your service as our walking billboard.",
     terms:
-      "This apparel is currently stored at UTDesign Makerspace and not available for shipping. Only the sizes above are available. Please contact an officer to buy this item.",
+      "This apparel is currently stored at UTDesign Makerspace and not available for shipping. Only the sizes above are available. These items are generally limited edition and will not be restocked. Please contact an officer to buy this item.",
   },
   Keychain: {
     title: "Keychains",
@@ -56,12 +56,30 @@ const MerchItems = [
     type: MerchTypes.Apparel,
   },
   {
+    name: "Legacy Makerspace Shirt",
+    description:
+      "A general UTDesign Makerspace shirt from an unknown year. Features a full UTDesign Makerspace logo on the front and our slogan on the back.",
+    price: 15,
+    thumbnail: "merch/dreamfront.png",
+    preview: "merch/dreamback.png",
+    type: MerchTypes.Apparel,
+  },
+  {
     name: "Legacy Mining Shirt",
     description:
       "A shirt featuring various student organizations and BitBot holding a pickaxe from 2018. We... don't really remember who we gave this to. But hey, now you can own one of the remaining few!",
     price: 10,
     thumbnail: "merch/cryptofront.png",
     preview: "merch/cryptoback.png",
+    type: MerchTypes.Apparel,
+  },
+  {
+    name: "Legacy Robotics Shirt",
+    description:
+      "A shirt showcasing a UT Dallas Robotics logo. The group that made these shirts has since disbanded, but we were home to many of their events and many existing robotics organizations.",
+    price: 15,
+    thumbnail: "merch/roboticsfront.png",
+    preview: "merch/roboticsback.png",
     type: MerchTypes.Apparel,
   },
   {
