@@ -27,12 +27,18 @@ export const MerchModalContainer = styled.div`
   margin: 20px 20px;
   border-radius: 20px;
   max-width: 800px;
+  max-height: 100vh;
+  overflow-y: scroll;
   position: fixed;
   pointer-events: all;
   box-shadow: 0 0.5em 1em -0.125em rgb(0 0 0 / 10%), 0 0px 0 1px rgb(0 0 0 / 2%);
 
   display: flex;
   align-items: center;
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
 
   @media screen and (max-width: 900px) {
     flex-direction: column;

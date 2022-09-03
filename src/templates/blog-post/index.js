@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import { graphql } from "gatsby";
 import { GatsbyImage, getSrc } from "gatsby-plugin-image";
 import Navbar from "../../components/navbar";
+import Sidebar from "../../components/sidebar";
 import HelmetComponent from "../../components/helmet";
 import Footer from "../../components/footer";
 import {
@@ -14,6 +15,12 @@ import {
 } from "./elements";
 
 export default function BlogPost({ data }) {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  };
+
   const post = data.markdownRemark;
 
   const previousIndex =
@@ -32,7 +39,8 @@ export default function BlogPost({ data }) {
         description={`${post.frontmatter.description} — ${post.excerpt}`}
         image={getSrc(post.frontmatter.thumbnail)}
       />
-      <Navbar />
+      <Navbar toggle={toggle} transparent={false} />
+      <Sidebar isOpen={isOpen} toggle={toggle} />
       <BlogPostWrapper>
         <BlogPostContainer>
           <BlogPostHeader>
