@@ -36,9 +36,9 @@ You will be expected to meet the following requirements:
 
 ## Applications
 
-Does either of those positions sound like fun? Great! Please apply using [our Tripetto form](https://tripetto.app/run/ZL28VJM7UL). Member applications will be open permanently but we will close our digital artist applications once we have found a suitable candidate. We will leave the digital artist application open until September 7th at a minimum, so make sure to apply as soon as you can!
+Does either of those positions sound like fun? Great! Please apply using our Tripetto form. Member applications will be open permanently but we will close our digital artist applications once we have found a suitable candidate. We will leave the digital artist application open until September 7th at a minimum, so make sure to apply as soon as you can!
 
-<https://tripetto.app/run/ZL28VJM7UL>
+EDIT: Due to technical issues, we are currently taking down the Tripetto form. Please reach out to Hudson Samuels on Discord to apply.
 
 ## Questions
 
