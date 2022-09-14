@@ -44,11 +44,6 @@ const partners = [
     link: "https://openutd.club/",
   },
   {
-    name: "PRIDE @ UTD",
-    img: "sponsors/pride.png",
-    link: "https://www.prideutdallas.net/",
-  },
-  {
     name: "RoboSub",
     img: "sponsors/robosub.png",
     link: "https://discord.gg/5sVVqaRKpc",
