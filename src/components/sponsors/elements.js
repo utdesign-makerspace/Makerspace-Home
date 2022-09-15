@@ -3,43 +3,21 @@ import styled from "styled-components";
 export const SponsorsContainer = styled.div`
   background: #f6f6f6;
   position: relative;
+  padding: 24px 24px;
 `;
 
 export const SponsorsWrapper = styled.div`
-  display: grid;
   z-index: 1;
   width: 100%;
-  max-width: 1200px;
+  max-width: 720px;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 24px;
-  grid-auto-columns: minmax(auto, 1fr);
+  padding: 24px 0px;
   justify-items: center;
-  grid-template-areas: "col1 col2";
 
-  @media screen and (max-width: 768px) {
-    grid-template-areas: "col1" "col2";
-  }
-`;
-
-export const SponsorsColumn = styled.div`
-  margin: 50px 32px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  grid-area: col1;
-
-  @media screen and (max-width: 768px) {
-    margin-bottom: 0;
-  }
-`;
-
-export const PartnersColumn = styled.div`
-  margin: 50px 32px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  grid-area: col2;
 `;
 
 export const SponsorsText = styled.div`

@@ -10,8 +10,6 @@ import {
   SponsorsText,
   SponsorLink,
   SponsorLinksContainer,
-  PartnersColumn,
-  SponsorsColumn,
 } from "./elements";
 import SponsorImage from "../sponsorimage";
 
@@ -29,6 +27,26 @@ const partners = [
     link: "https://www.instagram.com/aiaa_utd/",
   },
   {
+    name: "Combat Robotics",
+    img: "sponsors/combatrobotics.png",
+    link: "https://www.instagram.com/aiaa_utd/",
+  },
+  {
+    name: "Comet Cosplay",
+    img: "sponsors/cosplay.png",
+    link: "https://discord.gg/GcYmcUQf",
+  },
+  {
+    name: "Comet Keyboards",
+    img: "sponsors/keyboards.png",
+    link: "https://discord.gg/5bSPh7GKMC",
+  },
+  {
+    name: "Comet FIRST Alumni",
+    img: "sponsors/cfa.png",
+    link: "https://discord.gg/dkdZmJq",
+  },
+  {
     name: "Design Build Fly",
     img: "sponsors/dbf.png",
     link: "https://www.instagram.com/aiaa_utd/",
@@ -42,11 +60,6 @@ const partners = [
     name: "OpenUTD",
     img: "sponsors/openutd.png",
     link: "https://openutd.club/",
-  },
-  {
-    name: "PRIDE @ UTD",
-    img: "sponsors/pride.png",
-    link: "https://www.prideutdallas.net/",
   },
   {
     name: "RoboSub",
@@ -63,9 +76,35 @@ const partners = [
     img: "sponsors/utdallasdiscord.png",
     link: "https://discord.gg/utdallas",
   },
+  {
+    name: "Wind Energy Club",
+    img: "sponsors/wec.png",
+    link: "https://utd.link/wec",
+  },
 ];
 
 const Sponsors = () => {
+  return (
+    <SponsorsContainer>
+      <SponsorsGroup
+        name={"Sponsors"}
+        description={
+          "Our sponsors are groups and individuals that provide us with new technology, speakers for events, prizes, and general donations."
+        }
+        array={sponsors}
+      />
+      <SponsorsGroup
+        name={"Partners"}
+        description={
+          "Our partners are student groups that use the space frequently or help promote UTDesign Makerspace through their group."
+        }
+        array={partners}
+      />
+    </SponsorsContainer>
+  );
+};
+
+const SponsorsGroup = ({ name, description, array }) => {
   const { ref, inView } = useInView({
     threshold: 0.25,
   });
@@ -83,44 +122,21 @@ const Sponsors = () => {
   }, [inView]);
 
   return (
-    <SponsorsContainer>
-      <motion.div ref={ref} initial={{ y: 10, opacity: 0 }} animate={animation}>
-        <SponsorsWrapper>
-          <SponsorsColumn>
-            <SponsorsText>
-              <SponsorsH1>Sponsors</SponsorsH1>
-              <SponsorsP>
-                Our sponsors are groups and individuals that provide us with new
-                technology, speakers for events, prizes, and general donations.
-              </SponsorsP>
-            </SponsorsText>
-            <SponsorLinksContainer>
-              {sponsors.map((item) => (
-                <SponsorLink href={item.link} target="_blank">
-                  <SponsorImage filename={item.img} name={item.name} />
-                </SponsorLink>
-              ))}
-            </SponsorLinksContainer>
-          </SponsorsColumn>
-          <PartnersColumn>
-            <SponsorsText>
-              <SponsorsH1>Partners</SponsorsH1>
-              <SponsorsP>
-                Our partners are student groups that use the space frequently or
-                help promote UTDesign Makerspace through their group.
-              </SponsorsP>
-            </SponsorsText>
-            <SponsorLinksContainer>
-              {partners.map((item) => (
-                <SponsorLink href={item.link} target="_blank">
-                  <SponsorImage filename={item.img} name={item.name} />
-                </SponsorLink>
-              ))}
-            </SponsorLinksContainer>
-          </PartnersColumn>
-        </SponsorsWrapper>
-      </motion.div>
-    </SponsorsContainer>
+    <motion.div ref={ref} initial={{ y: 10, opacity: 0 }} animate={animation}>
+      <SponsorsWrapper>
+        <SponsorsText>
+          <SponsorsH1>{name}</SponsorsH1>
+          <SponsorsP>{description}</SponsorsP>
+        </SponsorsText>
+        <SponsorLinksContainer>
+          {array.map((item) => (
+            <SponsorLink href={item.link} target="_blank">
+              <SponsorImage filename={item.img} name={item.name} />
+            </SponsorLink>
+          ))}
+        </SponsorLinksContainer>
+      </SponsorsWrapper>
+    </motion.div>
   );
 };
 
