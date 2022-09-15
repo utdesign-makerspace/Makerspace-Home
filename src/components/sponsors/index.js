@@ -27,6 +27,21 @@ const partners = [
     link: "https://www.instagram.com/aiaa_utd/",
   },
   {
+    name: "Combat Robotics",
+    img: "sponsors/combatrobotics.png",
+    link: "https://www.instagram.com/aiaa_utd/",
+  },
+  {
+    name: "Comet Cosplay",
+    img: "sponsors/cosplay.png",
+    link: "https://discord.gg/GcYmcUQf",
+  },
+  {
+    name: "Comet Keyboards",
+    img: "sponsors/keyboards.png",
+    link: "https://discord.gg/5bSPh7GKMC",
+  },
+  {
     name: "Comet FIRST Alumni",
     img: "sponsors/cfa.png",
     link: "https://discord.gg/dkdZmJq",
