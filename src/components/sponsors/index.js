@@ -29,6 +29,11 @@ const partners = [
     link: "https://www.instagram.com/aiaa_utd/",
   },
   {
+    name: "Comet FIRST Alumni",
+    img: "sponsors/cfa.png",
+    link: "https://discord.gg/dkdZmJq",
+  },
+  {
     name: "Design Build Fly",
     img: "sponsors/dbf.png",
     link: "https://www.instagram.com/aiaa_utd/",
@@ -57,6 +62,11 @@ const partners = [
     name: "UT Dallas Discord",
     img: "sponsors/utdallasdiscord.png",
     link: "https://discord.gg/utdallas",
+  },
+  {
+    name: "Wind Energy Club",
+    img: "sponsors/wec.png",
+    link: "https://utd.link/wec",
   },
 ];
 
