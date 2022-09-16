@@ -43,6 +43,7 @@ const HeroImage = (props) => (
             position: "absolute",
           }}
           formats={["auto", "webp"]}
+          loading={props.eager ? "eager" : "lazy"}
         />
       );
     }}

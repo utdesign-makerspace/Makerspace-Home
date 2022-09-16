@@ -19,13 +19,13 @@ const IndexPage = () => {
   return (
     <>
       <HelmetComponent />
-      <Navbar toggle={toggle} transparent={true} />
+      <Navbar toggle={toggle} background={"#fff0"} absolute={true} />
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Hero />
       <LinkBanner
         text="Something big is coming in early 2023."
-        url="/store"
-        background={`#881df7`}
+        url="/project-2023"
+        background={`#01b7db`}
       />
       <Info />
       <Sponsors />

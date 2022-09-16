@@ -20,9 +20,9 @@ const goHome = () => {
   scroll.scrollToTop({ duration: 500, spy: true, exact: true });
 };
 
-const Navbar = ({ toggle, transparent }) => {
+const Navbar = ({ toggle, absolute, background }) => {
   return (
-    <Nav transparent={transparent}>
+    <Nav absolute={absolute} background={background}>
       <NavbarContainer>
         <NavLogo to="/" onClick={goHome}>
           <NavLogoImg src={MakerspaceLogo} />

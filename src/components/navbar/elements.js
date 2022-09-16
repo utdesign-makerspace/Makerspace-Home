@@ -3,8 +3,8 @@ import { Link as LinkS } from "react-scroll";
 import { Link } from "gatsby";
 
 export const Nav = styled.nav`
-  background: ${({ transparent }) => (transparent ? `none` : `#c1393d`)};
-  position: ${({ transparent }) => (transparent ? `absolute` : `static`)};
+  background: ${({ background }) => (background ? background : `#c1393d`)};
+  position: ${({ absolute }) => (absolute ? "absolute" : "static")};
   height: 80px;
   width: 100%;
   display: flex;
