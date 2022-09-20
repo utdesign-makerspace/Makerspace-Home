@@ -8,7 +8,7 @@ export const SidebarContainer = styled.aside`
   z-index: 999;
   width: 100%;
   height: 100%;
-  background: #c1393d;
+  background: var(--makerspace-red);
   display: grid;
   align-items: center;
   top: 0;
@@ -60,7 +60,7 @@ export const SidebarLinkS = styled(LinkS)`
   cursor: pointer;
 
   &:hover {
-    color: #f2d1c9;
+    color: var(--makerspace-nav-hover);
     transition: 0.1s ease-in-out;
   }
 `;
@@ -78,7 +78,7 @@ export const SidebarLinkG = styled(Link)`
   cursor: pointer;
 
   &:hover {
-    color: #f2d1c9;
+    color: var(--makerspace-nav-hover);
     transition: 0.1s ease-in-out;
   }
 `;
@@ -96,7 +96,7 @@ export const SidebarLinkA = styled.a`
   cursor: pointer;
 
   &:hover {
-    color: #f2d1c9;
+    color: var(--makerspace-nav-hover);
     transition: 0.1s ease-in-out;
   }
 `;
@@ -119,7 +119,7 @@ export const Social = styled.a`
   padding-right: 10px;
 
   &:hover {
-    color: #f2d1c9;
+    color: var(--makerspace-nav-hover);
     transition: 0.1s ease-in-out;
   }
 `;

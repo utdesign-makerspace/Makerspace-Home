@@ -66,10 +66,12 @@ const Infos = [
   },
 ];
 
-const Info = () => {
+const Info = ({ info }) => {
+  if (!info || info.length === 0) info = Infos;
+
   return (
     <>
-      {Infos.map((i, index) => (
+      {info.map((i, index) => (
         <InfoSingle
           title={i.title}
           description={i.description}

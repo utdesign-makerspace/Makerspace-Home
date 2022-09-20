@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const SponsorsContainer = styled.div`
-  background: #f6f6f6;
+  background: var(--makerspace-background-secondary);
   position: relative;
   padding: 24px 24px;
 `;
