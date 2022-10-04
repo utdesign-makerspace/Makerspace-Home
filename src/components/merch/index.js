@@ -199,6 +199,63 @@ const Merch = () => {
         )}
       </AnimatePresence>
       <MerchWrapper>
+        <div
+          style={{
+            marginLeft: "40px",
+            marginRight: "40px",
+            marginTop: "20px",
+            marginBottom: "20px",
+          }}
+        >
+          <MerchHeader>Donations</MerchHeader>
+          <MerchDescription>
+            If you want to donate without getting any merchandise.
+          </MerchDescription>
+          <MerchContainer>
+            {/*
+            !! IF ADDING A NEW DONATION CAMPAIGN !!
+            Copy the iframe of another campaign, paste it below, and change the
+            src to whatever you want. Leave all other attributes the same.
+            */}
+            <iframe
+              src="https://www.paypal.com/giving/campaigns?campaign_id=XT278LVCJGG7G"
+              title="PayPal donate campaign card"
+              frameborder="0"
+              width={358}
+              height={403}
+              scrolling="no"
+              style={{ margin: "8px 0px" }}
+            />
+          </MerchContainer>
+          <MerchContainer style={{ marginTop: "8px" }}>
+            <form
+              action="https://www.paypal.com/donate"
+              method="post"
+              target="_top"
+            >
+              <input
+                type="hidden"
+                name="hosted_button_id"
+                value="YYH3GDUAH84YS"
+              />
+              <input
+                type="image"
+                src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
+                border="0"
+                name="submit"
+                title="PayPal - The safer, easier way to pay online!"
+                alt="Donate with PayPal button"
+              />
+              <img
+                alt=""
+                border="0"
+                src="https://www.paypal.com/en_US/i/scr/pixel.gif"
+                width="1"
+                height="1"
+              />
+            </form>
+          </MerchContainer>
+        </div>
         <MerchSection
           type={MerchTypes.Apparel}
           apparelData={apparelData}
