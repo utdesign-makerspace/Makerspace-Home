@@ -105,7 +105,7 @@ export const NavLinkS = styled(LinkS)`
   transition: 0.2s;
 
   &:hover {
-    color: #f2d1c9;
+    color: var(--makerspace-nav-hover);
   }
 `;
 
@@ -119,7 +119,7 @@ export const NavLinkG = styled(Link)`
   transition: 0.2s;
 
   &:hover {
-    color: #f2d1c9;
+    color: var(--makerspace-nav-hover);
   }
 `;
 
@@ -133,7 +133,7 @@ export const NavLinkA = styled.a`
   transition: 0.2s;
 
   &:hover {
-    color: #f2d1c9;
+    color: var(--makerspace-nav-hover);
   }
 `;
 
@@ -156,6 +156,6 @@ export const NavSocials = styled.a`
   }
 
   &:hover {
-    color: #f2d1c9;
+    color: var(--makerspace-nav-hover);
   }
 `;

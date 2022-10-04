@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const ButtonLink = styled.a`
   border-radius: 50px;
-  background: #c1393d;
+  background: var(--makerspace-red);
   white-space: nowrap;
   padding: 12px 30px;
   color: #fff;
@@ -17,7 +17,7 @@ export const ButtonLink = styled.a`
   text-decoration: none;
 
   &:hover {
-    background: #cf484d;
+    background: var(--makerspace-red-hover);
     box-shadow: 0 0.5em 1em -0.125em rgb(0 0 0 / 20%),
       0 0px 0 1px rgb(0 0 0 / 2%);
   }
@@ -31,7 +31,7 @@ export const ButtonIconHolder = styled.div`
 
 export const DisabledButton = styled.div`
   border-radius: 50px;
-  background: #c1393d;
+  background: var(--makerspace-red);
   white-space: nowrap;
   padding: 12px 30px;
   color: #fff;

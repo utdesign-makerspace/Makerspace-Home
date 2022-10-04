@@ -48,7 +48,7 @@ export const Title = styled.h1`
   font-size: 40px;
   line-height: 1.1;
   font-weight: 600;
-  color: #c1393d;
+  color: var(--makerspace-red);
   text-align: ${({ imgLeft }) => (imgLeft ? `left` : `right`)};
 
   @media screen and (max-width: 768px) {
@@ -63,7 +63,7 @@ export const Description = styled.p`
   margin-bottom: 24px;
   font-size: 18px;
   line-height: 24px;
-  color: #000;
+  color: var(--makerspace-text);
   text-align: ${({ imgLeft }) => (imgLeft ? `left` : `right`)};
 
   @media screen and (max-width: 768px) {

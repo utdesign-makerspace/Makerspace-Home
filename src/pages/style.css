@@ -8,6 +8,14 @@
 :root {
   --swiper-theme-color: #fff;
   --swiper-navigation-size: 24px;
+  --makerspace-red: #c1373d;
+  --makerspace-red-hover: #cf484d;
+  --makerspace-nav-hover: #f2d1c9;
+  --makerspace-gray: #343a40;
+  --makerspace-background-main: #fff;
+  --makerspace-background-secondary: #f6f6f6;
+  --makerspace-text: #000;
+  --makerspace-text-footer: #fff;
 }
 
 .cal-event {
