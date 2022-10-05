@@ -11,6 +11,7 @@
 ## 💻 Development
 
 1. **Install [Node.js](https://nodejs.org/en/download/).**
+
    Our website uses Node.js to manage dependencies and run a local server for development. If you don't have Node.js installed, you can download it [here](https://nodejs.org/en/download/).
 
 1. **Clone the repository.**
@@ -20,6 +21,7 @@
    ```
 
 1. **Install dependencies.**
+
    Our website uses [Gatsby](https://www.gatsbyjs.org/) to build the website. Gatsby is a static site generator that uses React. To install Gatsby, run the following command in the root directory of the repository.
 
    ```shell
