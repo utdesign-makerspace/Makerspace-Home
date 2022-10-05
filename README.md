@@ -1,3 +1,6 @@
+<p align="center">
+  <img width="60%" src="./docs/images/logo.png">
+</p>
 <h1 align="center">
   UTDesign Makerspace Website
 </h1>
