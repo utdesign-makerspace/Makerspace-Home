@@ -10,20 +10,36 @@
 
 ## 💻 Development
 
-1.  **Start developing.**
+1. **Install [Node.js](https://nodejs.org/en/download/).**
+   Our website uses Node.js to manage dependencies and run a local server for development. If you don't have Node.js installed, you can download it [here](https://nodejs.org/en/download/).
 
-    Navigate into your new site’s directory and start it up.
+1. **Clone the repository.**
 
-    ```shell
-    cd Makerspace-Home/
-    npm run develop
-    ```
+   ```shell
+   git clone https://github.com/utdesign-makerspace/Makerspace-Home.git
+   ```
 
-1.  **Open the code and start programming!**
+1. **Install dependencies.**
+   Our website uses [Gatsby](https://www.gatsbyjs.org/) to build the website. Gatsby is a static site generator that uses React. To install Gatsby, run the following command in the root directory of the repository.
 
-    Your site is now running at http://localhost:8000!
+   ```shell
+   cd Makerspace-Home/
+   npm install
+   ```
 
-    Edit a page in `src/pages/` or a blog post `src/blog/` to see the site update in real-time!
+1. **Start developing.**
+
+   Navigate into your new site’s directory and start it up.
+
+   ```shell
+   npm run develop
+   ```
+
+1. **Open the code and start programming!**
+
+   Your site is now running at http://localhost:8000!
+
+   Edit a page in `src/pages/` or one of its styled components to see the site update in real-time!
 
 ## ✏️ Posting to the Blog
 
