@@ -24,7 +24,7 @@ const IndexPage = () => {
       <Hero />
       <LinkBanner
         text="Something big is coming in early 2023."
-        url="/project-2023"
+        url="/gg"
         background={`#01b7db`}
       />
       <Info />

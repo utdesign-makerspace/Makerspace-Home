@@ -10,22 +10,91 @@ import Footer from "../components/footer";
 import Info from "../components/info";
 import "./style.css";
 
-import { FaArrowDown } from "react-icons/fa";
+import { FaArrowDown, FaQuestion, FaYoutube, FaUserPlus } from "react-icons/fa";
 import WorkspaceImg from "../images/info/undraw_team_collaboration_re_ow29.svg";
+import Sponsors from "../components/sponsors";
+import Accordion from "../components/accordion";
 
 const Infos = [
   {
     title: "A cosmic-scale event.",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tristique risus nec feugiat in. Nulla aliquet enim tortor.",
+      "UTDesign Makerspace is proud to announce Got Game 2023, a three-day event that will bring together creative minds to develop games for PC and an arcade cabinet.",
     img: WorkspaceImg,
     imgAlt: "People collaborating on a project",
-    buttonLink: "https://wiki.utd.ms/faq",
-    buttonName: "Frequently Asked Questions",
+    buttonLink: "https://utd.ms/",
+    buttonName: "Learn More About UTDesign Makerspace",
+    buttonIcon: FaQuestion,
+  },
+  {
+    title: "Available to all Comets.",
+    description:
+      "Got Game 2023 will be fully available in-person to all UT Dallas students, and will also be available online through our YouTube channel to all participants worldwide.",
+    img: WorkspaceImg,
+    imgAlt: "People collaborating on a project",
+    buttonLink: "https://www.youtube.com/channel/UC3G92uIpEy31awnKisxhGWg",
+    buttonName: "YouTube Channel",
+    buttonIcon: FaYoutube,
+  },
+  {
+    title: "Limited availability.",
+    description:
+      "We expect Got Game 2023 to be one of our biggest events yet, so make sure to sign up ASAP to guarantee your spot in-person for free food, merch, industry talks, and more.",
+    img: WorkspaceImg,
+    imgAlt: "People collaborating on a project",
+    buttonLink: "https://www.youtube.com/channel/UC3G92uIpEy31awnKisxhGWg",
+    buttonName: "Sign Up",
+    buttonIcon: FaUserPlus,
   },
 ];
 
-const Project2023Page = () => {
+const sponsors = [
+  {
+    name: "UTDesign Capstone",
+    img: "sponsors/utdesign.png",
+    link: "https://utdesign.utdallas.edu/",
+  },
+];
+const partners = [
+  {
+    name: "UT Dallas Esports",
+    img: "sponsors/esports_dark.png",
+    link: "https://esports.utdallas.edu/",
+  },
+  {
+    name: "Student Game Developer Association",
+    img: "sponsors/sgda.png",
+    link: "https://utdsgda.club/",
+  },
+];
+const sponsorsGroups = [
+  {
+    name: "Sponsors",
+    description:
+      "Sponsors are groups providing food, merchandise, prizes, and other amenities.",
+    array: sponsors,
+  },
+  {
+    name: "Partners",
+    description:
+      "Partners are student groups helping us run and promote Got Game.",
+    array: partners,
+  },
+];
+
+const accordionValues = [
+  {
+    title: "This is an example question?",
+    content: "This is your example answer. It can be as long as necessary!",
+  },
+  {
+    title: "Where will the event be taking place?",
+    content:
+      "Got Game will take place in UTDesign Makerspace but be accessible online.",
+  },
+];
+
+const GotGamePage = () => {
   const [isOpen, setIsOpen] = useState(false);
   const { height, width } = useWindowDimensions();
 
@@ -107,6 +176,8 @@ const Project2023Page = () => {
         />
       )}
       <Info info={Infos} />
+      <Accordion values={accordionValues} />
+      <Sponsors sponsorArr={sponsorsGroups} />
       <Footer />
     </Container>
   );
@@ -117,10 +188,11 @@ const Container = styled.div`
   --makerspace-red-hover: #0097b5;
   --makerspace-nav-hover: #fdd1ff;
   --makerspace-gray: #343a40;
-  --makerspace-background-main: #fff;
-  --makerspace-background-secondary: #f6f6f6;
+  --makerspace-background-main: #121212;
+  --makerspace-background-secondary: #242424;
   --makerspace-text: #fff;
   --makerspace-text-footer: #fff;
+  --makerspace-accordion-title: #fff;
 
   background: #121212;
 `;
@@ -139,4 +211,4 @@ const Video = styled.iframe`
   }
 `;
 
-export default Project2023Page;
+export default GotGamePage;

@@ -82,24 +82,33 @@ const partners = [
     link: "https://utd.link/wec",
   },
 ];
+const sponsorsGroups = [
+  {
+    name: "Sponsors",
+    description:
+      "Our sponsors are groups and individuals that provide us with new technology, speakers for events, prizes, and general donations.",
+    array: sponsors,
+  },
+  {
+    name: "Partners",
+    description:
+      "Our partners are student groups that use the space frequently or help promote UTDesign Makerspace through their group.",
+    array: partners,
+  },
+];
 
-const Sponsors = () => {
+const Sponsors = ({ sponsorArr }) => {
+  if (!sponsorArr || sponsorArr.length === 0) sponsorArr = sponsorsGroups;
+
   return (
     <SponsorsContainer>
-      <SponsorsGroup
-        name={"Sponsors"}
-        description={
-          "Our sponsors are groups and individuals that provide us with new technology, speakers for events, prizes, and general donations."
-        }
-        array={sponsors}
-      />
-      <SponsorsGroup
-        name={"Partners"}
-        description={
-          "Our partners are student groups that use the space frequently or help promote UTDesign Makerspace through their group."
-        }
-        array={partners}
-      />
+      {sponsorArr.map((group) => (
+        <SponsorsGroup
+          name={group.name}
+          description={group.description}
+          array={group.array}
+        />
+      ))}
     </SponsorsContainer>
   );
 };
