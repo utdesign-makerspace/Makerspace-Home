@@ -16,8 +16,9 @@ To learn more about committees, check out our [FAQ](https://wiki.utd.ms/en/faq) 
 
 ## Officer Positions
 
-We are currently looking to fill the following positions for the Spring 2023 semester. If you are interested in applying, please [fill out this form](https://forms.gle/QYUP22ji9SnL356R8) before **applications close on December 23rd at 11:59 PM** and we will contact you as soon as possible.
-
+We are currently looking to fill the following positions for the Spring 2023 semester. If you are interested in applying, please [fill out this form](https://forms.gle/QYUP22ji9SnL356R8) before **applications close on December 23rd at 11:59 PM** and we will contact you as soon as possible. Officers get even more privileges, such as...
+- A free UTDesign Makerspace polo shirt
+- 24/7 access to the Makerspace (if needed)
 
 ### Development Lead (IT)
 
