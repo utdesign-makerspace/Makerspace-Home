@@ -47,19 +47,13 @@ const Navbar = ({ toggle, transparent }) => {
             <NavLinkA href="https://wiki.utd.ms/">Wiki</NavLinkA>
           </NavItem>
           <NavItem>
-            <NavSocials href="https://discord.gg/VQzQMnnWnx" target="_blank">
+            <NavSocials href="https://utd.ms/discord" target="_blank">
               <FaDiscord />
             </NavSocials>
-            <NavSocials
-              href="https://www.instagram.com/utdmakerspace/"
-              target="_blank"
-            >
+            <NavSocials href="https://utd.ms/instagram" target="_blank">
               <FaInstagram />
             </NavSocials>
-            <NavSocials
-              href="https://www.youtube.com/channel/UC3G92uIpEy31awnKisxhGWg"
-              target="_blank"
-            >
+            <NavSocials href="https://utd.ms/youtube" target="_blank">
               <FaYoutube />
             </NavSocials>
             <NavSocials href="mailto:utdmakerspace@gmail.com" target="_blank">
