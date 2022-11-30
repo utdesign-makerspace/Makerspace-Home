@@ -27,19 +27,13 @@ const Sidebar = ({ isOpen, toggle }) => {
           <SidebarLinkA href="https://learn.utd.ms/">Training</SidebarLinkA>
           <SidebarLinkA href="https://wiki.utd.ms/">Wiki</SidebarLinkA>
           <SidebarSocials>
-            <Social href="https://discord.gg/VQzQMnnWnx" target="_blank">
+            <Social href="https://utd.ms/discord" target="_blank">
               <FaDiscord />
             </Social>
-            <Social
-              href="https://www.instagram.com/utdmakerspace/"
-              target="_blank"
-            >
+            <Social href="https://utd.ms/instagram" target="_blank">
               <FaInstagram />
             </Social>
-            <Social
-              href="https://www.youtube.com/channel/UC3G92uIpEy31awnKisxhGWg"
-              target="_blank"
-            >
+            <Social href="https://utd.ms/youtube" target="_blank">
               <FaYoutube />
             </Social>
             <Social href="mailto:utdmakerspace@gmail.com" target="_blank">

@@ -29,7 +29,7 @@ const partners = [
   {
     name: "Combat Robotics",
     img: "sponsors/combatrobotics.png",
-    link: "https://www.instagram.com/aiaa_utd/",
+    link: "https://www.instagram.com/utdcombatrobotics",
   },
   {
     name: "Comet Cosplay",
