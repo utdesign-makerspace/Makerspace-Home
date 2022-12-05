@@ -1,8 +1,8 @@
 ---
 title: Recruiting for Spring 2023
 description: Many officer positions available
-date: 2022-12-01T22:00:00.000Z
-thumbnail: /blogimg/generic.png
+date: 2022-12-05T23:45:00.000Z
+thumbnail: /blogimg/join-the-space.png
 ---
 U﻿TDesign Makerspace is searching for three officers and new committee members for the Spring 2023 semester.
 
@@ -20,15 +20,6 @@ We are currently looking to fill the following positions for the Spring 2023 sem
 - A free UTDesign Makerspace polo shirt
 - 24/7 access to the Makerspace (if needed)
 
-### Development Lead (IT)
-
-The Systems Administrator oversees managing externally-developed technologies. This role is great for those who want to ensure students are able to rely on the makerspace and have experience managing the software for a large engineering facility.
-- Manages our user database
-- Manages every UTDesign Makerspace computer for security
-- Installs and updates necessary firmware and software on computers
-- Monitors our security footage through automated tools
-- Manages any other external tools (ex. Moodle, Home Assistant)
-
 ### Events Lead (Community)
 
 The Events Lead oversees planning and execution of UTDesign Makerspace events. This role is great for people with creative ideas who are looking for experience planning fun and interesting events.
@@ -45,3 +36,10 @@ The Maintenance Lead oversees the maintenance of our equipment. This role is gre
 - Sets up new equipment
 - Oversees creation of new trainings
 - Documents critical changes on our Discord server
+
+### Treasurer (Executive)
+
+The Treasurer assists with and monitors all finances. They may also hold another officer position if they choose to do so. This role is great for those looking for experience with managing an organization's revenue and demand.
+- Creates procurement requests for the President
+- Assists with fundraisers and other large financial events
+- Is told about any transactions using the UTDesign Makerspace bank and cost center accounts
