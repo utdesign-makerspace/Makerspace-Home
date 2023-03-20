@@ -15,6 +15,16 @@ import SponsorImage from "../sponsorimage";
 
 const sponsors = [
   {
+    name: "Dallas Makerspace",
+    img: "sponsors/dallasmakerspace.png",
+    link: "https://dallasmakerspace.org/",
+  },
+  {
+    name: "ECS Student Council",
+    img: "sponsors/ecsstuco.png",
+    link: "https://www.instagram.com/utd.ecs.stuco/",
+  },
+  {
     name: "UTDesign Capstone",
     img: "sponsors/utdesign.png",
     link: "https://utdesign.utdallas.edu/",
