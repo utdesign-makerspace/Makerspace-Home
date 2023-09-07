@@ -37,11 +37,6 @@ const partners = [
     link: "https://www.instagram.com/aiaa_utd/",
   },
   {
-    name: "Combat Robotics",
-    img: "sponsors/combatrobotics.png",
-    link: "https://www.instagram.com/utdcombatrobotics",
-  },
-  {
     name: "Comet Cosplay",
     img: "sponsors/cosplay.png",
     link: "https://discord.gg/GcYmcUQf",
@@ -52,25 +47,32 @@ const partners = [
     link: "https://discord.gg/5bSPh7GKMC",
   },
   {
+    name: "Comet Robotics",
+    img: "sponsors/combatrobotics.png",
+    link: "https://linktr.ee/utdcombatrobotics",
+  },
+  {
     name: "Comet FIRST Alumni",
     img: "sponsors/cfa.png",
     link: "https://discord.gg/dkdZmJq",
   },
-  {
-    name: "Design Build Fly",
-    img: "sponsors/dbf.png",
-    link: "https://www.instagram.com/aiaa_utd/",
-  },
+  // DBF merged with AIAA as of the end of the Spring 2023 semester
+  // {
+  //   name: "Design Build Fly",
+  //   img: "sponsors/dbf.png",
+  //   link: "https://www.instagram.com/aiaa_utd/",
+  // },
   {
     name: "Institute of Electrical and Electronics Engineers",
     img: "sponsors/ieee.png",
     link: "https://ieeeutd.org/",
   },
-  {
-    name: "OpenUTD",
-    img: "sponsors/openutd.png",
-    link: "https://openutd.club/",
-  },
+  // OpenUTD quit hosting meetings at Makerspace as of 9/8/23
+  // {
+  //   name: "OpenUTD",
+  //   img: "sponsors/openutd.png",
+  //   link: "https://openutd.club/",
+  // },
   {
     name: "RoboSub",
     img: "sponsors/robosub.png",

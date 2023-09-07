@@ -28,6 +28,7 @@ const Footer = () => {
             <FooterColumnHeader>Services</FooterColumnHeader>
             <FooterLink href="https://utd.ms/blog">Blog</FooterLink>
             <FooterLink href="https://utd.ms/calendar">Calendar</FooterLink>
+            <FooterLink href="https://mosh.utd.ms/">MOSH</FooterLink>
             <FooterLink href="https://utd.ms/store">Store</FooterLink>
             <FooterLink href="https://learn.utd.ms/">Training</FooterLink>
             <FooterLink href="https://wiki.utd.ms/">Wiki</FooterLink>
