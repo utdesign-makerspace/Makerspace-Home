@@ -49,7 +49,7 @@ const partners = [
   {
     name: "Comet Robotics",
     img: "sponsors/combatrobotics.png",
-    link: "https://linktr.ee/utdcombatrobotics",
+    link: "https://linktr.ee/cometrobotics",
   },
   {
     name: "Comet FIRST Alumni",
