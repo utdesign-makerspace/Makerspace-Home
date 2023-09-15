@@ -32,6 +32,11 @@ const sponsors = [
 ];
 const partners = [
   {
+    name: "Accessible Prosthetics Initiative at UT Dallas",
+    img: "sponsors/api.png",
+    link: "https://www.utdapi.com/",
+  },
+  {
     name: "American Institute of Aeronautics and Astronautics",
     img: "sponsors/aiaa.png",
     link: "https://www.instagram.com/aiaa_utd/",
