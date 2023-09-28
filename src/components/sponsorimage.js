@@ -34,10 +34,7 @@ const SponsorImage = (props) => (
           title={props.name}
           layout="fixed"
           objectFit="contain"
-          style={{
-            width: "96px",
-            height: "96px",
-          }}
+          style={{ height: "100%" }}
           formats={["auto", "webp"]}
         />
       );

@@ -42,14 +42,21 @@ export const SponsorLinksContainer = styled.div`
 `;
 
 export const SponsorLink = styled.a`
-  margin: 12px 12px;
+  margin: ${(props) => props.size / 8}px ${(props) => props.size / 8}px;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: all 0.2s ease-in-out;
+  max-height: ${(props) => props.size}px;
+  max-width: ${(props) => props.size * 1.5}px;
 
   &:hover {
     transform: scale(1.05);
     cursor: pointer;
+  }
+
+  img[role="presentation"] {
+    max-height: ${(props) => props.size}px;
+    max-width: ${(props) => props.size * 1.5}px;
   }
 `;

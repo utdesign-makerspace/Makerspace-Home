@@ -13,6 +13,18 @@ import {
 } from "./elements";
 import SponsorImage from "../sponsorimage";
 
+const biggerSponsors = [
+  {
+    name: "UTDesign Capstone",
+    img: "sponsors/utdesign.png",
+    link: "https://utdesign.utdallas.edu/",
+  },
+  {
+    name: "UTDesign EPICS",
+    img: "sponsors/epics.png",
+    link: "https://epics.utdallas.edu/",
+  },
+];
 const sponsors = [
   {
     name: "Dallas Makerspace",
@@ -23,11 +35,6 @@ const sponsors = [
     name: "ECS Student Council",
     img: "sponsors/ecsstuco.png",
     link: "https://www.instagram.com/utd.ecs.stuco/",
-  },
-  {
-    name: "UTDesign Capstone",
-    img: "sponsors/utdesign.png",
-    link: "https://utdesign.utdallas.edu/",
   },
 ];
 const partners = [
@@ -40,6 +47,11 @@ const partners = [
     name: "American Institute of Aeronautics and Astronautics",
     img: "sponsors/aiaa.png",
     link: "https://www.instagram.com/aiaa_utd/",
+  },
+  {
+    name: "Arters & Crafters",
+    img: "sponsors/arters.png",
+    link: "https://linktr.ee/artersandcraftersutd",
   },
   {
     name: "Comet Cosplay",
@@ -56,11 +68,12 @@ const partners = [
     img: "sponsors/combatrobotics.png",
     link: "https://linktr.ee/cometrobotics",
   },
-  {
-    name: "Comet FIRST Alumni",
-    img: "sponsors/cfa.png",
-    link: "https://discord.gg/dkdZmJq",
-  },
+  // Comet FIRST Alumni merged with Comet Robotics as of the end of the Summer 2023 semester
+  // {
+  //   name: "Comet FIRST Alumni",
+  //   img: "sponsors/cfa.png",
+  //   link: "https://discord.gg/dkdZmJq",
+  // },
   // DBF merged with AIAA as of the end of the Spring 2023 semester
   // {
   //   name: "Design Build Fly",
@@ -106,8 +119,22 @@ const Sponsors = () => {
       <SponsorsGroup
         name={"Sponsors"}
         description={
-          "Our sponsors are groups and individuals that provide us with new technology, speakers for events, prizes, and general donations."
+          <>
+            Our sponsors are groups and individuals that provide us with new
+            technology, speakers for events, prizes, and general donations.
+            <br />
+            <br />
+            Want to support our organization?{" "}
+            <a
+              href={"https://utdallas.box.com/v/makerspace-sponsorship-packet"}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Check out our sponsorship packet!
+            </a>
+          </>
         }
+        largeArray={biggerSponsors}
         array={sponsors}
       />
       <SponsorsGroup
@@ -121,7 +148,7 @@ const Sponsors = () => {
   );
 };
 
-const SponsorsGroup = ({ name, description, array }) => {
+const SponsorsGroup = ({ name, description, largeArray, array }) => {
   const { ref, inView } = useInView({
     threshold: 0.25,
   });
@@ -145,9 +172,18 @@ const SponsorsGroup = ({ name, description, array }) => {
           <SponsorsH1>{name}</SponsorsH1>
           <SponsorsP>{description}</SponsorsP>
         </SponsorsText>
+        {largeArray && (
+          <SponsorLinksContainer>
+            {largeArray.map((item) => (
+              <SponsorLink href={item.link} target="_blank" size={144}>
+                <SponsorImage filename={item.img} name={item.name} />
+              </SponsorLink>
+            ))}
+          </SponsorLinksContainer>
+        )}
         <SponsorLinksContainer>
           {array.map((item) => (
-            <SponsorLink href={item.link} target="_blank">
+            <SponsorLink href={item.link} target="_blank" size={96}>
               <SponsorImage filename={item.img} name={item.name} />
             </SponsorLink>
           ))}

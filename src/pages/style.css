@@ -28,3 +28,8 @@
   border-radius: 100vw;
   background-clip: content-box;
 }
+
+a {
+  color: #c1393d;
+  text-decoration: none;
+}

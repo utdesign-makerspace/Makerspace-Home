@@ -30,7 +30,7 @@ const MerchTypes = {
   Sticker: {
     title: "Stickers",
     description:
-      "Slap it on your favorite tech or that one light pole by Hoblitzelle Hall.",
+      "Slap it on your favorite tech or our sticker bombed arcade cabinet.",
     terms:
       'Stickers are produced at UTDesign Makerspace and not available for shipping. Stickers are 2" but can be larger for a small fee. Prices listed reflect a cash discount. Please contact an officer to buy stickers.',
   },
