@@ -48,7 +48,6 @@ export const MerchModalAnimation = styled(motion.div)`
 
 export const MerchHeader = styled.h1`
   width: 100%;
-  font-size: 40px;
   text-align: center;
   margin-bottom: 6px;
 `;

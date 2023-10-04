@@ -16,7 +16,8 @@ import {
 const MerchTypes = {
   Apparel: {
     title: "Apparel",
-    description: "We greatly appreciate your service as our walking billboard.",
+    description:
+      "We greatly appreciate your service as our walking billboard. Some shirts are available for a limited time only at low prices, so be sure to check them out!",
     terms:
       "This apparel is currently stored at UTDesign Makerspace and not available for shipping. Only the sizes above are available. These items are generally limited edition and will not be restocked. Please contact an officer to buy this item.",
   },
@@ -41,7 +42,7 @@ const MerchItems = [
     name: "Legacy Got Game Shirt",
     description:
       "A shirt to commemorate the Got Game game jam held in 2019. This shirt was available to participants and volunteers of the event. Various sponsors and partners are on the back of the shirt.",
-    price: 10,
+    price: 5,
     thumbnail: "merch/ggfront.png",
     preview: "merch/ggback.png",
     type: MerchTypes.Apparel,
@@ -50,7 +51,7 @@ const MerchItems = [
     name: "Legacy Long Sleeve Shirt",
     description:
       "Previously an officer-only item, this shirt is now available to all members of UTDesign Makerspace in limited quantities. Features BitBot in a shirt pocket with the Makerspace name on the left sleeve.",
-    price: 20,
+    price: 10,
     thumbnail: "merch/longsleevefront.png",
     preview: "merch/longsleeveside.png",
     type: MerchTypes.Apparel,
@@ -59,7 +60,7 @@ const MerchItems = [
     name: "Legacy Makerspace Shirt",
     description:
       "A general UTDesign Makerspace shirt from an unknown year. Features a full UTDesign Makerspace logo on the front and our slogan on the back.",
-    price: 15,
+    price: 10,
     thumbnail: "merch/dreamfront.png",
     preview: "merch/dreamback.png",
     type: MerchTypes.Apparel,
@@ -68,7 +69,7 @@ const MerchItems = [
     name: "Legacy Mining Shirt",
     description:
       "A shirt featuring various student organizations and BitBot holding a pickaxe from 2018. We... don't really remember who we gave this to. But hey, now you can own one of the remaining few!",
-    price: 10,
+    price: 5,
     thumbnail: "merch/cryptofront.png",
     preview: "merch/cryptoback.png",
     type: MerchTypes.Apparel,
@@ -77,7 +78,7 @@ const MerchItems = [
     name: "Legacy Robotics Shirt",
     description:
       "A shirt showcasing a UT Dallas Robotics logo. The group that made these shirts has since disbanded, but we were home to many of their events and many existing robotics organizations.",
-    price: 15,
+    price: 5,
     thumbnail: "merch/roboticsfront.png",
     preview: "merch/roboticsback.png",
     type: MerchTypes.Apparel,
@@ -126,9 +127,17 @@ const MerchItems = [
   {
     name: "Custom Sticker",
     description:
-      "Have a custom sticker made for you! We can make stickers of any size and shape. Please note that we are offering this as a paid service out of convenience. You are welcome to print your own stickers at home and cut them at the Makerspace.",
-    price: 1,
+      "Have a custom sticker made for you! We can make stickers of any size and shape. Please note that that this is based on availability and we are offering this as a paid service out of convenience. Orders will only be processed once we can fill a full sticker sheet. You are welcome to print your own stickers at home and cut them at the Makerspace.",
+    price: 1.5,
     thumbnail: "merch/generalsticker.png",
+    type: MerchTypes.Sticker,
+  },
+  {
+    name: "Custom Sticker Sheet",
+    description:
+      'Have a custom 6.75" × 9.25" sticker sheet made for you! Please note that we are offering this as a paid service out of convenience. You are welcome to print your own stickers at home and cut them at the Makerspace.',
+    price: 12,
+    thumbnail: "merch/generalstickersheet.png",
     type: MerchTypes.Sticker,
   },
 ];
@@ -199,6 +208,21 @@ const Merch = () => {
         )}
       </AnimatePresence>
       <MerchWrapper>
+        <MerchSection
+          type={MerchTypes.Apparel}
+          apparelData={apparelData}
+          merchClick={merchClick}
+        />
+        <MerchSection
+          type={MerchTypes.Keychain}
+          apparelData={apparelData}
+          merchClick={merchClick}
+        />
+        <MerchSection
+          type={MerchTypes.Sticker}
+          apparelData={apparelData}
+          merchClick={merchClick}
+        />
         <div
           style={{
             marginLeft: "40px",
@@ -214,24 +238,23 @@ const Merch = () => {
           <MerchContainer>
             {/*
             !! IF ADDING A NEW DONATION CAMPAIGN !!
-            Copy the iframe of another campaign, paste it below, and change the
-            src to whatever you want. Leave all other attributes the same.
+            Change the src to the PayPal campaign link and uncomment the iframe.
             */}
-            <iframe
+            {/* <iframe
               src="https://www.paypal.com/giving/campaigns?campaign_id=XT278LVCJGG7G"
               title="PayPal donate campaign card"
               frameborder="0"
               width={358}
-              height={403}
+              height={407}
               scrolling="no"
               style={{ margin: "8px 0px" }}
-            />
+            /> */}
           </MerchContainer>
           <MerchContainer style={{ marginTop: "8px" }}>
             <form
               action="https://www.paypal.com/donate"
               method="post"
-              target="_top"
+              target="_blank"
             >
               <input
                 type="hidden"
@@ -256,21 +279,6 @@ const Merch = () => {
             </form>
           </MerchContainer>
         </div>
-        <MerchSection
-          type={MerchTypes.Apparel}
-          apparelData={apparelData}
-          merchClick={merchClick}
-        />
-        <MerchSection
-          type={MerchTypes.Keychain}
-          apparelData={apparelData}
-          merchClick={merchClick}
-        />
-        <MerchSection
-          type={MerchTypes.Sticker}
-          apparelData={apparelData}
-          merchClick={merchClick}
-        />
       </MerchWrapper>
     </>
   );
@@ -295,7 +303,15 @@ class MerchSection extends React.Component {
         }}
       >
         <MerchHeader>{this.props.type.title}</MerchHeader>
-        <MerchDescription>{this.props.type.description}</MerchDescription>
+        <MerchDescription
+          style={{
+            maxWidth: "800px",
+            marginLeft: "auto",
+            marginRight: "auto",
+          }}
+        >
+          {this.props.type.description}
+        </MerchDescription>
         {this.itemArr.length > 0 ? (
           <MerchContainer>
             {this.itemArr.map((item) => (
