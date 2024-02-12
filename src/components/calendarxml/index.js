@@ -85,7 +85,7 @@ class CalendarXML extends React.Component {
                 className: "cal-event",
               }}
               height="100%"
-              eventColor="#c1393d"
+              eventColor="#343a3f"
               headerToolbar={{
                 right: buttons,
               }}
@@ -95,6 +95,18 @@ class CalendarXML extends React.Component {
                 list: "List",
               }}
               eventClick={this.handleDateClick}
+              eventContent={(arg) => {
+                if (arg.event.title.toLowerCase().includes("reserved")) {
+                  arg.borderColor = "#ebb511";
+                } else if (
+                  arg.event.title.toLowerCase().includes("makerspace") ||
+                  arg.event._def.extendedProps.description
+                    ?.toLowerCase()
+                    .includes("makerspace")
+                ) {
+                  arg.borderColor = "#c1393d";
+                }
+              }}
             />
           </CalWrapper>
         </CalContainer>

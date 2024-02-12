@@ -124,22 +124,23 @@ const MerchItems = [
     thumbnail: "merch/pridecollection.png",
     type: MerchTypes.Sticker,
   },
-  {
-    name: "Custom Sticker",
-    description:
-      "Have a custom sticker made for you! We can make stickers of any size and shape. Please note that that this is based on availability and we are offering this as a paid service out of convenience. Orders will only be processed once we can fill a full sticker sheet. You are welcome to print your own stickers at home and cut them at the Makerspace.",
-    price: 1.5,
-    thumbnail: "merch/generalsticker.png",
-    type: MerchTypes.Sticker,
-  },
-  {
-    name: "Custom Sticker Sheet",
-    description:
-      'Have a custom 6.75" × 9.25" sticker sheet made for you! Please note that we are offering this as a paid service out of convenience. You are welcome to print your own stickers at home and cut them at the Makerspace.',
-    price: 12,
-    thumbnail: "merch/generalstickersheet.png",
-    type: MerchTypes.Sticker,
-  },
+  // INFO: Custom stickers were removed because we don't have the manpower to fulfill them.
+  // {
+  //   name: "Custom Sticker",
+  //   description:
+  //     "Have a custom sticker made for you! We can make stickers of any size and shape. Please note that that this is based on availability and we are offering this as a paid service out of convenience. Orders will only be processed once we can fill a full sticker sheet. You are welcome to print your own stickers at home and cut them at the Makerspace.",
+  //   price: 1.5,
+  //   thumbnail: "merch/generalsticker.png",
+  //   type: MerchTypes.Sticker,
+  // },
+  // {
+  //   name: "Custom Sticker Sheet",
+  //   description:
+  //     'Have a custom 6.75" × 9.25" sticker sheet made for you! Please note that we are offering this as a paid service out of convenience. You are welcome to print your own stickers at home and cut them at the Makerspace.',
+  //   price: 12,
+  //   thumbnail: "merch/generalstickersheet.png",
+  //   type: MerchTypes.Sticker,
+  // },
 ];
 
 const Merch = () => {

@@ -14,27 +14,56 @@ import {
 import SponsorImage from "../sponsorimage";
 
 const biggerSponsors = [
+  // On-going sponsor as they provide us with equipment and space
+  // (NOTE: We only use this if we're low on sponsors to keep the list short)
+  // {
+  //   name: "UTDesign Capstone",
+  //   img: "sponsors/utdesign.png",
+  //   link: "https://utdesign.utdallas.edu/",
+  // },
+
+  // On-going sponsor as they provide us with equipment and use our space for community service
+  // (NOTE: We only use this if we're low on sponsors to keep the list short)
+  // {
+  //   name: "UTDesign EPICS",
+  //   img: "sponsors/epics.png",
+  //   link: "https://epics.utdallas.edu/",
+  // },
+
+  // Sponsor until the end of the Fall 2024 semester
   {
-    name: "UTDesign Capstone",
-    img: "sponsors/utdesign.png",
-    link: "https://utdesign.utdallas.edu/",
+    name: "GLYDR",
+    img: "sponsors/glydr.png",
+    link: "https://www.glydr.gg/",
   },
+
+  // On-going sponsor as they hold events and have other plans if everything goes well
   {
-    name: "UTDesign EPICS",
-    img: "sponsors/epics.png",
-    link: "https://epics.utdallas.edu/",
+    name: "Repairify",
+    img: "sponsors/repairify.png",
+    link: "https://www.repairify.com/",
   },
 ];
 const sponsors = [
+  // On-going sponsor as we are encouraged to take items from their auction(?) area
   {
     name: "Dallas Makerspace",
     img: "sponsors/dallasmakerspace.png",
     link: "https://dallasmakerspace.org/",
   },
+
+  // On-going sponsor as we consistently request money depending on our needs
   {
     name: "ECS Student Council",
     img: "sponsors/ecsstuco.png",
     link: "https://www.instagram.com/utd.ecs.stuco/",
+  },
+
+  // Sponsor until the end of the Fall 2024 semester
+  {
+    name: "Mouser Electronics",
+    img: "sponsors/mouser.png",
+    link: "https://www.mouser.com/",
   },
 ];
 const partners = [
@@ -43,69 +72,83 @@ const partners = [
     img: "sponsors/api.png",
     link: "https://www.utdapi.com/",
   },
+
   {
     name: "American Institute of Aeronautics and Astronautics",
     img: "sponsors/aiaa.png",
     link: "https://www.instagram.com/aiaa_utd/",
   },
+
   {
     name: "Arters & Crafters",
     img: "sponsors/arters.png",
     link: "https://linktr.ee/artersandcraftersutd",
   },
-  {
-    name: "Comet Cosplay",
-    img: "sponsors/cosplay.png",
-    link: "https://discord.gg/GcYmcUQf",
-  },
+
+  // Comet Cosplay had low membership Fall 2023 and used different spaces starting Spring 2024
+  // {
+  //   name: "Comet Cosplay",
+  //   img: "sponsors/cosplay.png",
+  //   link: "https://discord.gg/GcYmcUQf",
+  // },
+
   {
     name: "Comet Keyboards",
     img: "sponsors/keyboards.png",
     link: "https://discord.gg/5bSPh7GKMC",
   },
+
   {
     name: "Comet Robotics",
     img: "sponsors/combatrobotics.png",
     link: "https://linktr.ee/cometrobotics",
   },
+
   // Comet FIRST Alumni merged with Comet Robotics as of the end of the Summer 2023 semester
   // {
   //   name: "Comet FIRST Alumni",
   //   img: "sponsors/cfa.png",
   //   link: "https://discord.gg/dkdZmJq",
   // },
+
   // DBF merged with AIAA as of the end of the Spring 2023 semester
   // {
   //   name: "Design Build Fly",
   //   img: "sponsors/dbf.png",
   //   link: "https://www.instagram.com/aiaa_utd/",
   // },
+
   {
     name: "Institute of Electrical and Electronics Engineers",
     img: "sponsors/ieee.png",
     link: "https://ieeeutd.org/",
   },
+
   // OpenUTD quit hosting meetings at Makerspace as of 9/8/23
   // {
   //   name: "OpenUTD",
   //   img: "sponsors/openutd.png",
   //   link: "https://openutd.club/",
   // },
+
   {
     name: "RoboSub",
     img: "sponsors/robosub.png",
     link: "https://discord.gg/5sVVqaRKpc",
   },
+
   {
     name: "Student Game Developer Association",
     img: "sponsors/sgda.png",
     link: "https://utdsgda.club/",
   },
+
   {
     name: "UT Dallas Discord",
     img: "sponsors/utdallasdiscord.png",
     link: "https://discord.gg/utdallas",
   },
+
   {
     name: "Wind Energy Club",
     img: "sponsors/wec.png",
@@ -140,7 +183,22 @@ const Sponsors = () => {
       <SponsorsGroup
         name={"Partners"}
         description={
-          "Our partners are student groups that use the space frequently or help promote UTDesign Makerspace through their group."
+          <>
+            Our partners are student groups that use the space frequently or
+            help promote UTDesign Makerspace through their group.
+            <br />
+            <br />
+            Want to become a partner?{" "}
+            <a
+              href={
+                "https://wiki.utd.ms/en/faq#events-and-student-organizations"
+              }
+              target="_blank"
+              rel="noreferrer"
+            >
+              Check out our student organizations FAQ!
+            </a>
+          </>
         }
         array={partners}
       />
