@@ -27,7 +27,7 @@ const Infos = [
   {
     title: "A place for all Comets.",
     description:
-      "UTDesign Makerspace is a free location for students, faculty, staff, and alumni to work on projects of any kind. We are located in SPN 2.220 and open from 7 AM to 9 PM on weekdays.",
+      "UTDesign Makerspace is a free location for students, faculty, and staff to work on projects of any kind. We are located in SPN 2.220 and open from 7 AM to 9 PM on weekdays.",
     img: WorkspaceImg,
     imgAlt: "People collaborating on a project",
     buttonLink: "https://wiki.utd.ms/faq",
